@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: O;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .container {
+            display: flex;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .gauche {
+            background-color: rgb(224, 110, 110);
+            width: 40%;
+            padding: 30px;
+        }
+        .gauche section {
+            padding-top: 250px;
+        }
+        .gauche i {
+            color: #f2f2f2;
+        }
+        .gauche h3 {
+            margin-top: 25px;
+            color: white;
+        }
+        .gauche h3 ul li {
+
+        }
+        
+        .droite {
+            width: 60%;
+            padding: 40px;
+            /*animation: slideRight 2s ease;*/
+        }
+        .droite h2 {
+        
+        }
+        .trait {
+            width: 400px;
+            height: 4px;
+            background-color: #f2f2f2;
+            margin-top: 1px;
+        }
+        .droite h3 {
+            color:rgb(224, 110, 110) ;
+        }
+        .droite  .trai {
+            width: 80px;
+            height: 4px;
+            background-color: rgb(224, 110, 110);
+            margin-top: 1px;
+        }
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(226, 152, 152);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-left: -400px;
+
+            }
+            header .photo img {
+            width: 150px;
+            height: 150px;
+            align-items: left;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin-left: 30px;
+        }
+        header .intro {
+            margin-right: 100px;
+        }
+        header  h1 {
+            animation: slideRight 7s ease;
+        }
+        footer{
+            text-align:center;
+            padding:20px;
+            }
+        button{
+            padding:10px;
+            margin:10px;
+            cursor:pointer;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: rgb(226, 152, 152);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="gauche">
+                
+            <section>
+                <h3>Coordonnées</h3>
+                <P><i class="fa-solid fa-phone"></i> +223 95227941</P>
+                <P><i class="fa-solid fa-envelope"></i>  kanouteaissata001@gmail.com</P>
+                <P><i class="fa-solid fa-map-pin"></i> Bamako, Mali</P>
+
+                <h3>COMPETENCES</h3>
+                <ul>
+                    <li>Html / CSS</li>
+                    <li>Conception de base de données (postgreSQL)</li>
+                </ul>
+                <h3>QUALITES</h3>
+                <ul>
+                    <li>Rigoureuse</li>
+                    <li>Créative</li>
+                </ul>
+                <h3>LANGUES</h3>
+                <ul>
+                    <li>Français</li>
+                    <li>Anglais debutant</li>
+                </ul>
+                <h3>CENTRES D'INTERET</h3>
+                <ul>
+                    <li>Voyage</li>
+                    <li>Lecture</li>
+                </ul>
+            </section>
+        </section>
+        <section class="droite">
+            <header>
+                <div class="photo">
+                    <img src="photo-kanoute.jpeg" alt="photo Aïssata ">
+                </div>
+                <div class="intro">
+                    <h1>Aïssata kanouté</h1>
+                    <h2>Etudiante en dev web et mobile </h2>
+                    <div class="trait"></div>
+                    <p>Pasionnée par le numérique et motivée</p>
+                </div>
+            </header>
+            <section> 
+                <h3>EXPERIENCES</h3>
+                    <div class="trai"></div>
+                <p>Projet Site Web: Digitalisation d'une ferme pour la vente des produits Avicole</p>
+                <h3>FORMATION</h3>
+                    <div class="trai"></div>
+                <p>Baccalauréat Franco-Arabe - 2021</p>
+                <p>Licence professionel Informatique - 2026</p>
+                <p>Option Administration système & réseau et conception <br> de base de donées à l'université du SAHEL</p>
+            </section>
+            
+        </section>
+    </main>
+    <footer>
+        <button onclick="alert('Le fichier est téléchargé avec siccès' )">Télécharger CV </button>
+        <a href=""><button>Retour à l'accueil</button></a>
+    </footer>
+
+</body>
+</html>

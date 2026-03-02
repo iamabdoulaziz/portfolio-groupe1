@@ -55,12 +55,15 @@ header{
   font-weight:600;
   font-size:18px;
 }
-
+.logo-circle img{
+  width:150px;
+  height:150px;
+}
 .logo-circle{
   width:40px;
   height:40px;
   border-radius:50%;
-  background:var(--accent);
+
   color:#fff;
   display:flex;
   align-items:center;
@@ -116,7 +119,7 @@ nav a:hover::after{
   transition:1s ease;
 }
 
-.hero-content.active{
+.hero-content{
   opacity:1;
   transform:translateY(0);
 }
@@ -131,7 +134,7 @@ nav a:hover::after{
   max-width:650px;
   margin:auto;
   font-weight:300;
-  color:var(--text-secondary);
+  color:black;
 }
 
 /* ================= TEAM SECTION ================= */

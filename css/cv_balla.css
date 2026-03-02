@@ -20,7 +20,7 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Header */
+ 
 .header {
     background-color: var(--dark-grey);
     color: white;
@@ -38,18 +38,18 @@ body {
     }
 }
 
-/* Layout Principal */
+
 .content {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     position: relative;
-    margin-top: -100px; /* Remonte la colonne grise sur le header */
+    margin-top: -100px;
 }
 
-/* Colonne Gauche (La forme arrondie) */
+
 .sidebar {
     background-color: var(--light-grey);
-    border-radius: 150px 150px 0 0; /* Crée l'effet arche */
+    border-radius: 150px 150px 0 0;
     padding: 120px 30px 40px 40px;
     
     h3 {
