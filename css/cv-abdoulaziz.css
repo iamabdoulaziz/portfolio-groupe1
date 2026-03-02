@@ -1,6 +1,92 @@
 body {
-    background: linear-gradient(to bottom, #707070 250px, white 250px);
+    background: linear-gradient(to bottom, #706F6B 250px, white 250px);
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+.principal {
+    display: flex;
+    align-items: stretch;
+}
+.hr-minim {
+    position: relative;
+    bottom: 15px;
+    width: 64px;
+}
+.left-content {
+    position: relative;
+    background-color:#D9D9D9 ;
+    margin-top: 60px;
+    margin-left: 50px;
+    padding-left: 2%;
+    border-top-right-radius: 150PX;
+    border-top-left-radius: 150px;
+}
+aside {
+    width: 250px;
+}
+.profil-img img {
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.name {
+    justify-content: flex-end;
+    margin-top: -5%;
+    margin-left: 70%; 
+    color: white;
+    p{
+        position: relative;
+        font-size: 40px; 
+    }
+    h2 {
+    position: relative;
+    margin-top: -68px;
+    padding-left: 44%;
+    font-size: 40px;
+}
+    .sub-title{
+        font-size: 16px;
+        margin-top: -32px;
+        padding-left: 5%;
+    }
+}
+.profile-info {
+    margin-top: 6%;
+}
+.title-date{
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    position: relative;
+}
+.date {
+    position: relative;
+}
+.hr-max {
+    width: 144px;
+}
+.right-content {
+    position: relative;
+    margin-top: 8%;
+    margin-left: 5%;
+    padding-right: 2%;
+}
+.realisation {
+    display: flex;
+    justify-content: space-between;
+    .real-left {
+        position: relative;
+
+    }
+    .real-right {
+        position: relative;
+        margin-left: 2%;
+    }
 }
