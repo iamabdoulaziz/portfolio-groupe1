@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    background:#ccc;
+    font-family: Arial, sans-serif;
+}
+
+.page{
+      width:210mm;
+    height:297mm;
+    margin:20px auto;
+    background:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.2);
+    /*overflow:hidden;*/
+}
+
+.cv-container{
+   display:flex;
+    height:100%;
+}
+
+.gauche{
+    width:35%;
+    background:#d6c3b1;
+    padding:25px;
+}
+
+.photo-container{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.photo-container img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:8px solid #c8b8a4;
+    object-fit:cover;
+    animation: zoomIn 1.2s ease;
+}
+
+.section{
+    margin-bottom:20px;
+}
+
+.gauche h3{
+    color:#5c4b3a;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.gauche p, .gauche li{
+    font-size:15px;
+}
+
+.gauche ul{
+    padding-left:18px;
+}
+
+
+.droite{
+    width:65%;
+    padding:30px;
+}
+
+.header-box{
+    background:#efe5dc;
+    padding:20px;
+    border-radius:12px;
+    animation: fadeIn 1.2s ease;
+}
+
+.header-box h1{
+    color:#b07f5a;
+    font-size:28px;
+    margin:0;
+}
+
+.header-box h2{
+    color:#7a5a42;
+    margin:8px 0;
+    font-size:20px;
+}
+
+.line{
+    width:100px;
+    height:3px;
+    background:#b07f5a;
+    margin:10px 0;
+}
+
+.droite h3{
+    color:#b07f5a;
+    font-size:16px;
+    margin-top:25px;
+}
+
+.job span{
+    font-size:15px;
+    color:gray;
+}
+
+
+.actions{
+    text-align:center;
+    margin:20px;
+}
+
+.top-actions{
+    text-align:left;
+    padding:12px 20px;
+}
+
+.top-actions button{
+    margin:0;
+}
+
+button{
+    background:#b07f5a;
+    color:white;
+    padding:8px 18px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+
+@keyframes zoomIn{
+    from{transform:scale(0);}
+    to{transform:scale(1);}
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+
+@media print {
+    body{
+        background:white;
+    }
+
+    .page{
+        margin:0;
+        box-shadow:none;
+    }
+
+    .actions{
+        display:none;
+    }
+}
