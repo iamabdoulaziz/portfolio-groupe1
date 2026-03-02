@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+/* Pour le corps*/
 
 body {
     background: #cfd3d8;
@@ -20,37 +21,42 @@ body {
     background: #ffffff;
 }
 
-/* COLONNE GAUCHE */
+/* Pour la colonne gauche*/
 .left {
     width: 35%;
-    background: #c9b6a3;
+    background: #DACBBC;
     padding: 200px 30px 30px 30px; /* espace en haut pour la photo */
 }
 
-/* COLONNE DROITE */
+/* Pour la colonne droite*/
 .right {
     width: 65%;
-    background: #e9e9e9;
+    background:white;
     padding: 40px;
     position: relative;
 }
 
-/* HEADER */
+
 .header {
-    background: #d8cfc8;/*couleur du deuxieme rectangle*/
-    border-radius: 20px;
+    background: #F7EFEC;/*couleur du deuxieme rectangle*/
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     padding: 40px;
     position: relative;
-    margin-left: -120px; /* chevauche le rectangle gauche */
+    margin-left: -230px; /* chevauche le rectangle gauche */
     display: flex;
     align-items: center;
+    margin-right: -40px; 
 }
 
-/* PHOTO */
+/* pour la photo*/
 .photo {
     position: absolute;
     left: -90px;
-    top: 30px;
+    top: 15px;
+
 }
 
 .photo img {
@@ -59,11 +65,12 @@ body {
     border-radius: 50%;
     border: 8px solid white;
     object-fit: cover;
+     
 }
 
-/* TEXTE HEADER */
+/* pour le texte du header */
 .header-text {
-    margin-left: 120px;
+    margin-left: 160px;
 }
 
 .header h1 {
@@ -75,7 +82,7 @@ body {
 .header h2 {
     font-size: 18px;
     color: #9c7b5f;
-    border-bottom: 2px solid #b5855d;
+    border-bottom: 2px solid #b5855d; /*Pour le trait en bas du developpeur web*/
     display: inline-block;
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -86,42 +93,68 @@ body {
     color: #555;
 }
 
-/* SECTION */
+/* Pour la section */
 .section {
     margin-top: 40px;
 }
 
 .section h3 {
-    color: #b5855d;
-    margin-bottom: 20px;
+    color: #b5855d; /* marron */
+    margin-bottom: 25px;
+    position: relative;
+   
+}
+.section h3::after {
+    content: "";
+    width: 60px;          /* longueur du trait */
+    height: 3px;          /* épaisseur */
+    background: #b5855d;  /* couleur marron */
+    position: absolute;
+    left: 0;
+    bottom: -8px;
 }
 
 .formation {
     margin-bottom: 20px;
 }
 
-/* COLONNE GAUCHE */
+.formation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formation span {
+    color: #DED0C2;
+    font-weight: bold;
+}
+.formation p{
+    margin-top: 20px;
+} 
+
+/* pour la colone gauche */
 .left {
     width: 35%;
-    background: #c9b6a3;
-    padding: 200px 35px 40px 35px;
+    background: #D2BEA9;
+   padding: 300px  35px 40px 35px;
 }
 
-/* TITRES */
+/* pour les titres */
 .left h3 {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 12px;
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: #655143;
 }
 
-/* PARAGRAPHES */
+/* Pour les paragraphes */
 .left p {
     margin-bottom: 8px;
     line-height: 1.5;
+    color: #655143;
 }
 
-/* LISTES */
+/* pour la liste */
 .left ul {
     margin-bottom: 15px;
     padding-left: 18px;
@@ -129,8 +162,60 @@ body {
 
 .left li {
     margin-bottom: 6px;
+        color: #655143;
 }
 
 .left li {
     margin-bottom: 6px;
+}
+
+.left i {
+    margin-right: 10px;
+  color: #8B5E3C; 
+    font-size: 14px;
+}
+
+.top-buttons {
+    width: 900px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+
+.home-btn {
+    background: white;
+    color: #b5855d;
+    border: 2px solid #b5855d;
+}
+
+
+.download-btn {
+    background: #b5855d;
+    color: white;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+#download-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
