@@ -1,0 +1,55 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+  margin: 2em;
+  color: #34495e;
+}
+
+.container {
+  display: flex;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: rgb(237, 236, 236);
+}
+
+.contact-title,
+.skill-title,
+.language-title,
+.reference-title {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  padding-bottom: 0.5em;
+}
+
+.skill-list {
+  padding-left: 14px;
+  .skill-item {
+    padding-bottom: 8px;
+  }
+}
+
+.language-list {
+  padding-left: 14px;
+  .lang-item {
+    padding-bottom: 8px;
+  }
+}
+
+.reference-name,
+.reference-poste,
+.reference-phone,
+.reference-email {
+  padding-bottom: 8px;
+}

@@ -86,15 +86,12 @@ nav a:hover{
   color:var(--text-primary);
 }
 
-nav a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-5px;
-  width:0%;
-  height:2px;
-  background:var(--accent);
-  transition:.3s;
+/* COLONNE DROITE */
+.right {
+    width: 65%;
+    background: floralwhite;
+    padding: 40px;
+    position: relative;
 }
 
 nav a:hover::after{

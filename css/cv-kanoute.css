@@ -1,0 +1,116 @@
+
+        body {
+            margin: O;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .container {
+            display: flex;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .gauche {
+            background-color: rgb(224, 110, 110);
+            width: 40%;
+            padding: 30px;
+        }
+        .gauche section {
+            padding-top: 250px;
+        }
+        .gauche i {
+            color: #f2f2f2;
+        }
+        .gauche h3 {
+            margin-top: 25px;
+            color: white;
+        }
+        .gauche h3 ul li {
+
+        }
+        
+        .droite {
+            width: 60%;
+            padding: 40px;
+            /*animation: slideRight 2s ease;*/
+        }
+        .droite h2 {
+        
+        }
+        .trait {
+            width: 400px;
+            height: 4px;
+            background-color: #f2f2f2;
+            margin-top: 1px;
+        }
+        .droite h3 {
+            color:rgb(224, 110, 110) ;
+        }
+        .droite  .trai {
+            width: 80px;
+            height: 4px;
+            background-color: rgb(224, 110, 110);
+            margin-top: 1px;
+        }
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(226, 152, 152);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            margin-left: -330px;
+           
+            }
+            header .photo {
+                margin-left: -90px;
+            }
+            header .photo img {
+            width: 150px;
+            height: 150px;
+            align-items: left;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin-right: 400px;
+        }
+        header .intro {
+            margin-right: 900px;
+            
+
+        }
+        header  h1 {
+            animation: slideRight 7s ease;
+        }
+        footer{
+            text-align:center;
+            padding:20px;
+            }
+        button{
+            padding:10px;
+            margin:10px;
+            cursor:pointer;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: rgb(226, 152, 152);
+            color: white;
+        }
