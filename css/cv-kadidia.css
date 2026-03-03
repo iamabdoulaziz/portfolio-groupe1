@@ -42,14 +42,12 @@ body {
     transform: scale(1.05);
 }
 
-/* MESSAGE */
 #message-telechargement {
     text-align: center;
     color: green;
     margin-bottom: 20px;
 }
 
-/* CONTENEUR CV */
 .conteneur-cv {
     max-width: 900px;
     margin: auto;
@@ -59,16 +57,18 @@ body {
     overflow: hidden;
 }
 
-/* COLONNE GAUCHE */
 .colonne-gauche {
     width: 35%;
     background: #D2BEA9;
-    padding: 260px 30px 40px 30px;
-    margin-right: 50;
+    padding: 310px 30px 40px 30px;
+}
+.colonne-gauche ul {
+    padding-left: 18px; 
 }
 
 .colonne-gauche section {
     margin-bottom: 25px;
+    margin-left: 40px;
 }
 
 .colonne-gauche h3 {
@@ -83,13 +83,15 @@ body {
     line-height: 1.6;  
 }
 
-/* COLONNE DROITE */
 .colonne-droite {
     width: 65%;
+ background: white; 
+ margin-top: 10px;
     padding: 40px;
+
+
 }
 
-/* ENTETE */
 .entete {
     background: #F7EFEC;
     padding: 40px;
@@ -118,12 +120,18 @@ body {
 
 .entete h1 {
     color: #b5855d;
+     margin-bottom: 10px;
 }
 
 .entete h2 {
-    border-bottom: 2px solid #b5855d;
+    border-bottom: 3px solid #b5855d;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+      color: #b5855d;
+}
+
+.entete p {
+    color: #A39890;
 }
 
 .formations h3 {
@@ -146,9 +154,15 @@ body {
     margin-top: 25px;
 }
 
+.bloc-formation p{
+    margin-top: 25px;
+}
+
 .ligne-formation {
     display: flex;
     justify-content: space-between;
+        margin-top: 25px;
+
 }
 
 .ligne-formation span {
