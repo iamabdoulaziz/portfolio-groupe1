@@ -89,6 +89,13 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding-top: 100px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+.hero.active{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero h1 {
