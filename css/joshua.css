@@ -1,8 +1,14 @@
+* {
+    font-size: 16px;
+}
+   
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins, sans-serif;
     margin: 0;
     background-color: whitesmoke;
 }
+h1{font-size: 28px; font-weight: bold; color: #fff; background-color: #3475EB;}
+h2{font-size: 20px; font-weight: bold; color: #fff; background-color: #3475EB;}
 .container{
     display: flex;
     max-width: 1000px;
@@ -22,10 +28,13 @@ body{
 }
 .profile-img{
     position: relative;
-    top: 5px;
+    bottom: 100px;
     img{
-    width: 200px;
-    height: 200px;
+        border: 2px solid #fff;
+    position: relative;
+    top: 6rem;
+    width: 220px;
+    height: 220px;
     border-radius: 50%; /* Cercle */
     object-fit: cover;
     display: block;
@@ -38,7 +47,7 @@ body{
     padding: 0;
 }
 .name {
-    background-color: #152437; /* Gris foncé du bandeau */
+    background-color: #3475EB; /* Gris foncé du bandeau */
     color: white;
     padding: 20px;
      h1 {
@@ -74,7 +83,8 @@ a{
     color: white;
     font-size: larger;
         &:hover{
-            background-color: #152437;
+            background-color: #fff;
+            color: #3475EB;
         }
 }
 footer{
@@ -83,6 +93,19 @@ footer{
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+}
+button{
+    background-color: #3475EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+        &:hover{
+            background-color: #fff;
+            color: #3475EB;
+        }
 }
 
 @keyframes fadeIn {
