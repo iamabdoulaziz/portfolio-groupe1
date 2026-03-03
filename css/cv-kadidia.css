@@ -5,12 +5,11 @@
 }
 
 body {
-    background: #cfd3d8;
+    background: #A2A2A2;
     font-family: Arial, sans-serif;
     padding: 40px;
 }
 
-/* BOUTONS */
 .barre-boutons {
     max-width: 900px;
     margin: auto;
@@ -28,14 +27,15 @@ body {
 }
 
 .bouton-accueil {
-    border: 2px solid #b5855d;
-    color: #b5855d;
-    background: white;
+    border: 2px solid #3475EB;
+    color: #FFFFFF;
+    background: #3475EB;
 }
 
 .bouton-telecharger {
-    background: #b5855d;
-    color: white;
+    background: #3475EB;
+    color: #FFFFFF;
+     border: 2px solid #3475EB;
 }
 
 .bouton:hover {
@@ -60,7 +60,7 @@ body {
 .colonne-gauche {
     width: 35%;
     background: #D2BEA9;
-    padding: 310px 30px 40px 30px;
+    padding: 345px 30px 40px 30px;
 }
 .colonne-gauche ul {
     padding-left: 18px; 
@@ -69,6 +69,11 @@ body {
 .colonne-gauche section {
     margin-bottom: 25px;
     margin-left: 40px;
+}
+
+.colonne-gauche section:hover {
+    transform: translateX(5px);
+    transition: 0.3s;
 }
 
 .colonne-gauche h3 {
@@ -88,14 +93,16 @@ body {
  background: white; 
  margin-top: 10px;
     padding: 40px;
+   
 
 
 }
 
 .entete {
-    background: #F7EFEC;
+   background: #F7EFEC;
     padding: 40px;
-    margin-left: -150px;
+    margin-left: -210px;
+       margin-right: -40px;
     border-radius: 20px 0 0 20px;
     position: relative;
 }
@@ -103,15 +110,20 @@ body {
 .photo-profil {
     position: absolute;
     left: -90px;
-    top: 20px;
+    top: 28px;
+    
 }
 
 .photo-profil img {
-    width: 160px;
-    height: 160px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     border: 6px solid white;
     object-fit: cover;
+     transition: 0.4s ease;
+}
+.photo-profil img:hover {
+    transform: scale(1.05);
 }
 
 .texte-entete {
@@ -121,6 +133,10 @@ body {
 .entete h1 {
     color: #b5855d;
      margin-bottom: 10px;
+     transition: 0.3s;
+}
+.entete h1:hover {
+    letter-spacing: 2px;
 }
 
 .entete h2 {
@@ -132,6 +148,8 @@ body {
 
 .entete p {
     color: #A39890;
+        line-height: 1.6;
+
 }
 
 .formations h3 {
@@ -152,6 +170,11 @@ body {
 
 .bloc-formation {
     margin-top: 25px;
+     transition: 0.3s ease;
+}
+.bloc-formation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .bloc-formation p{
@@ -168,4 +191,49 @@ body {
 .ligne-formation span {
     color: #8B5E3C;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+    .conteneur-cv {
+        flex-direction: column; 
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .colonne-gauche,
+    .colonne-droite {
+        width: 100%;
+    }
+
+    .colonne-gauche {
+        padding: 40px 20px;
+    }
+
+    .colonne-droite {
+        padding: 20px;
+    }
+
+     .entete {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .photo-profil {
+        position: static; 
+        margin-bottom: 20px;
+    }
+
+    .photo-profil img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .texte-entete {
+        margin-left: 0;
+    }
+
 }
