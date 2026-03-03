@@ -1,0 +1,266 @@
+/* RESET & FONTS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-wrapper {
+    width: 850px;
+    display: flex; /* Crée les deux colonnes */
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    min-height: 1100px;
+}
+
+/* SIDEBAR (GAUCHE) */
+.sidebar {
+    width: 38%;
+    background-color: #3D3D33; /* Marron foncé de votre photo */
+    color: #ffffff;
+    border-top-right-radius: 190px;
+    border-top-left-radius: 190px;
+    padding: 40px 20px;
+}
+
+.photo-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.contact-info p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.section-group {
+    margin-top: 35px;
+}
+
+.sidebar-title {
+    font-size: 15px;
+    border-left: 3px solid white;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.skill-list, .simple-list {
+    list-style: none;
+    font-size: 12px;
+}
+
+.skill-list li, .simple-list li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.certif-text {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* CONTENU (DROITE) */
+.main-content {
+    width: 62%;
+    padding: 40px 30px;
+    color: #333;
+}
+
+.main-header h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.sub-header {
+    font-size: 12px;
+    color: #666;
+}
+
+.job-title {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.profil-box {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.profil-box h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.profil-box p {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.right-section {
+    margin-bottom: 30px;
+}
+
+.right-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.content-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.exp-block h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.date {
+    font-style: italic;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+
+}
+/* --- AJOUT POUR LE RESPONSIVE --- */
+
+@media (max-width: 850px) {
+    body {
+        padding: 0; /* On enlève les marges sur mobile */
+    }
+
+    .cv-wrapper {
+        width: 100%; /* Le CV prend toute la largeur */
+        flex-direction: column; /* La sidebar passe au-dessus du contenu */
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 100%; /* La colonne marron prend toute la largeur */
+        border-radius: 0; /* On enlève les arrondis sur mobile pour plus de clarté */
+        padding: 30px 15px;
+        text-align: center; /* On centre le texte pour un look mobile plus moderne */
+    }
+
+    .sidebar-title {
+        border-left: none;
+        border-bottom: 2px solid white; /* Ligne en dessous plutôt qu'à gauche */
+        display: inline-block;
+        padding-left: 0;
+        padding-bottom: 5px;
+    }
+
+    .photo-container {
+        width: 120px; /* On réduit un peu la photo */
+        height: 120px;
+    }
+
+    .main-content {
+        width: 100%; /* Le contenu blanc prend toute la largeur */
+        padding: 30px 15px;
+    }
+
+    .main-header {
+        text-align: center; /* Centre le nom et le titre sur mobile */
+    }
+
+    .profil-box h3 {
+        display: block;
+        text-align: center;
+    }
+}
+/* On force le body à être une colonne pour empiler CV puis Footer */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.cv-wrapper {
+    width: 850px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    display: flex; /* Garde vos deux colonnes (sidebar et main) */
+}
+
+/* Style du footer extérieur */
+.cv-footer {
+    width: 100%;
+    max-width: 850px; /* Aligné sur la largeur du CV */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 0;
+    margin-top: 20px; /* Espace entre le CV et les boutons */
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-download {
+    background-color: #3D3D33;
+    color: white;
+}
+
+.btn-back {
+    background-color: #ffffff;
+    color: #3D3D33;
+    border: 2px solid #3D3D33;
+}
+
+/* TRÈS IMPORTANT : On cache le footer si on imprime ou si on génère le PDF */
+@media print {
+    .cv-footer {
+        display: none !important;
+    }
+}
