@@ -1,3 +1,4 @@
 window.addEventListener("load",()=>{
-document.querySelector(".hero-content").classList.add("active")
+    setTimeout(()=>{document.querySelector(".hero").classList.add("active");},1000);
+
 })
