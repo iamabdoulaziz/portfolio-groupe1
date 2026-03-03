@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <button class="btn-retour">
+    <span class="icon">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </span>
+    Retour
+</button>
     <div class="container">
         <aside class="sidebar">
             <div class="photo-identity">
@@ -56,6 +64,8 @@
             <div class="header-top">
                 <h1>DIALLO <span style="font-weight: 500;">Abdoulaye.D</span> </h1>
                 <div class="sous-titre">Développeur Web Junior & Designer</div>
+                
+          
                 <p style="margin-top: 12px;"> Développeur junior passionné par le web, j’utilise JavaScript
                     (React, Node, Express) pour créer des applications web performantes, curieux et rigoureux, je
                     contribue à des projets innovants tout en développant mes compétences. </p>
@@ -63,6 +73,7 @@
 
 
             <div class="section-titre">EXPÉRIENCES PROFESSIONNELLES</div>
+            <div class="section-ligne"></div>
 
             <div class="experience-item">
                 <div class="exp-titre">DÉVELOPPEUR WEB JUNIOR (Stage)</div>
@@ -106,6 +117,7 @@
             </div>
 
             <div class="section-titre">FORMATIONS</div>
+             <div class="section-ligne"></div>
           
 
 
@@ -122,7 +134,46 @@
 
 
         </main>
+        
     </div>
+
+    
+
+<div class="actions">
+    <button onclick="downloadCV()">
+       
+        Télécharger CV</button>
+    
+</div>
+
+    <script>
+        function downloadCV() {
+
+    const link = document.createElement("a");
+   // link.href = "cv-hamidou.pdf"; 
+    link.download = "CV-Hamidou-Koita.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+   
+    alert("Le fichier est téléchargé avec succès");
+}
+const expItems = document.querySelectorAll('.experience-item');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+expItems.forEach(item => observer.observe(item));
+</script>
 </body>
 
 </html>
