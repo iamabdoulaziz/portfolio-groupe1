@@ -7,12 +7,13 @@ body{
     display: flex;
     max-width: 1000px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #ffff;
     box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
 }
 .sidebar{
     width: 35%;
-    background-color:  rgba(0, 0, 0,0.1);
+    background-color:  #3475EB;
+    color: white;
     padding: 0px 20px;
     border-top-left-radius: 155px;
     border-top-right-radius: 155px;
@@ -37,9 +38,9 @@ body{
     padding: 0;
 }
 .name {
-    background-color: #a0a0a0; /* Gris foncé du bandeau */
+    background-color: #152437; /* Gris foncé du bandeau */
     color: white;
-    padding: 10px;
+    padding: 20px;
      h1 {
     font-size: 3rem;
     margin: 0;
@@ -70,10 +71,10 @@ h2 {
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: larger;
         &:hover{
-            background-color: #a0a0a0;
+            background-color: #152437;
         }
 }
 footer{

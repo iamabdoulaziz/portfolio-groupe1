@@ -2,220 +2,170 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
-/* Pour le corps*/
 
 body {
     background: #cfd3d8;
-    display: flex;
-    justify-content: center;
+    font-family: Arial, sans-serif;
     padding: 40px;
 }
 
-.cv {
-    width: 900px;
+/* BOUTONS */
+.barre-boutons {
+    max-width: 900px;
+    margin: auto;
     display: flex;
-    border-radius: 25px;
-    overflow: hidden;
-    background: #ffffff;
-}
-
-/* Pour la colonne gauche*/
-.left {
-    width: 35%;
-    background: #DACBBC;
-    padding: 200px 30px 30px 30px; /* espace en haut pour la photo */
-}
-
-/* Pour la colonne droite*/
-.right {
-    width: 65%;
-    background:white;
-    padding: 40px;
-    position: relative;
-}
-
-
-.header {
-    background: #F7EFEC;/*couleur du deuxieme rectangle*/
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding: 40px;
-    position: relative;
-    margin-left: -230px; /* chevauche le rectangle gauche */
-    display: flex;
-    align-items: center;
-    margin-right: -40px; 
-}
-
-/* pour la photo*/
-.photo {
-    position: absolute;
-    left: -90px;
-    top: 15px;
-
-}
-
-.photo img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 8px solid white;
-    object-fit: cover;
-     
-}
-
-/* pour le texte du header */
-.header-text {
-    margin-left: 160px;
-}
-
-.header h1 {
-    font-size: 28px;
-    color: #b5855d;
-    margin-bottom: 10px;
-}
-
-.header h2 {
-    font-size: 18px;
-    color: #9c7b5f;
-    border-bottom: 2px solid #b5855d; /*Pour le trait en bas du developpeur web*/
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.header p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* Pour la section */
-.section {
-    margin-top: 40px;
-}
-
-.section h3 {
-    color: #b5855d; /* marron */
-    margin-bottom: 25px;
-    position: relative;
-   
-}
-.section h3::after {
-    content: "";
-    width: 60px;          /* longueur du trait */
-    height: 3px;          /* épaisseur */
-    background: #b5855d;  /* couleur marron */
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-}
-
-.formation {
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.formation-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.formation span {
-    color: #DED0C2;
-    font-weight: bold;
-}
-.formation p{
-    margin-top: 20px;
-} 
-
-/* pour la colone gauche */
-.left {
-    width: 35%;
-    background: #D2BEA9;
-   padding: 300px  35px 40px 35px;
-}
-
-/* pour les titres */
-.left h3 {
-    margin-top: 20px;
-    margin-bottom: 12px;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: #655143;
-}
-
-/* Pour les paragraphes */
-.left p {
-    margin-bottom: 8px;
-    line-height: 1.5;
-    color: #655143;
-}
-
-/* pour la liste */
-.left ul {
-    margin-bottom: 15px;
-    padding-left: 18px;
-}
-
-.left li {
-    margin-bottom: 6px;
-        color: #655143;
-}
-
-.left li {
-    margin-bottom: 6px;
-}
-
-.left i {
-    margin-right: 10px;
-  color: #8B5E3C; 
-    font-size: 14px;
-}
-
-.top-buttons {
-    width: 900px;
-    margin: 0 auto 20px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.btn {
+.bouton {
     padding: 10px 20px;
     border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
     text-decoration: none;
-    transition: 0.3s ease;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-
-.home-btn {
-    background: white;
-    color: #b5855d;
+.bouton-accueil {
     border: 2px solid #b5855d;
+    color: #b5855d;
+    background: white;
 }
 
-
-.download-btn {
+.bouton-telecharger {
     background: #b5855d;
     color: white;
 }
 
-
-.btn:hover {
+.bouton:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-
-#download-message {
+#message-telechargement {
     text-align: center;
     color: green;
-    font-weight: bold;
     margin-bottom: 20px;
+}
+
+.conteneur-cv {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.colonne-gauche {
+    width: 35%;
+    background: #D2BEA9;
+    padding: 310px 30px 40px 30px;
+}
+.colonne-gauche ul {
+    padding-left: 18px; 
+}
+
+.colonne-gauche section {
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+
+.colonne-gauche h3 {
+    margin-bottom: 10px;
+    color: #655143;
+}
+
+.colonne-gauche p,
+.colonne-gauche li {
+    color: #655143;
+    margin-bottom: 8px;   
+    line-height: 1.6;  
+}
+
+.colonne-droite {
+    width: 65%;
+ background: white; 
+ margin-top: 10px;
+    padding: 40px;
+
+
+}
+
+.entete {
+    background: #F7EFEC;
+    padding: 40px;
+    margin-left: -150px;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+
+.photo-profil {
+    position: absolute;
+    left: -90px;
+    top: 20px;
+}
+
+.photo-profil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+}
+
+.texte-entete {
+    margin-left: 140px;
+}
+
+.entete h1 {
+    color: #b5855d;
+     margin-bottom: 10px;
+}
+
+.entete h2 {
+    border-bottom: 3px solid #b5855d;
+    display: inline-block;
+    margin-bottom: 15px;
+      color: #b5855d;
+}
+
+.entete p {
+    color: #A39890;
+}
+
+.formations h3 {
+    margin-top: 40px;
+    color: #b5855d;
+    position: relative;
+}
+
+.formations h3::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #b5855d;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.bloc-formation {
+    margin-top: 25px;
+}
+
+.bloc-formation p{
+    margin-top: 25px;
+}
+
+.ligne-formation {
+    display: flex;
+    justify-content: space-between;
+        margin-top: 25px;
+
+}
+
+.ligne-formation span {
+    color: #8B5E3C;
+    font-weight: bold;
 }
