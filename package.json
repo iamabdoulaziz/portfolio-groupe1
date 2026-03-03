@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-groupe1",
+  "version": "1.0.0",
+  "description": "TP HTML CSS JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ballasow/portfolio-groupe1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ballasow/portfolio-groupe1/issues"
+  },
+  "homepage": "https://github.com/ballasow/portfolio-groupe1#readme"
+}
