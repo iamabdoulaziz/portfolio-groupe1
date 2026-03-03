@@ -8,7 +8,7 @@ body{
       width:210mm;
     height:297mm;
     margin:20px auto;
-    background:white;
+    background:rgb(255, 255, 255);
     box-shadow:0 0 20px rgba(0,0,0,0.2);
     /*overflow:hidden;*/
 }
@@ -63,7 +63,7 @@ body{
 }
 
 .header-box{
-    background:#efe5dc;
+    background:#F5F5DC;
     padding:20px;
     border-radius:12px;
     animation: fadeIn 1.2s ease;
@@ -107,7 +107,7 @@ body{
 
 .top-actions{
     text-align:left;
-    padding:12px 20px;
+    padding:15px 100px;
 }
 
 .top-actions button{
