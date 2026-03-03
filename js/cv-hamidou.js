@@ -1,8 +1,8 @@
 function downloadCV() {
 
     const link = document.createElement("a");
-   // link.href = "cv-hamidou.pdf"; 
-    link.download = "CV-Hamidou-Koita.pdf";
+    link.href = "All CVs/cv-hamidou.pdf"; 
+    link.download = "All CVs/cv-hamidou.pdf";
 
     document.body.appendChild(link);
     link.click();
