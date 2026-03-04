@@ -94,6 +94,8 @@ body {
     font-size: 1.1rem;
     font-weight: 300;
     margin-top: 5px;
+    line-height: 2;
+    word-spacing: 5px;
 }
 
 .content-body {
@@ -102,11 +104,36 @@ body {
 
 /* Timeline Style */
 .timeline-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     padding-left: 20px;
     border-left: 1px solid #ccc;
+    line-height: 2;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    text-align: justify;
 }
+.timeline-item1 {
+    top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+    line-height: 2;
+    word-spacing: 10px;
+}
+
+
+.timeline-item2{
+    top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+     line-height: 2;
+    word-spacing: 10px;
+}
+
 
 .icon-title {
     display: flex;
@@ -131,9 +158,9 @@ body {
 }
 
 .timeline-content p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
-    color: #444;
+    color: #000;
 }
 
 /* Experience Entries */
@@ -150,13 +177,14 @@ body {
 }
 
 .experience-entry ul {
+    color: #000;
     margin-left: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .school-info {
-    font-size: 0.85rem;
-    color: #555;
+    font-size: 1rem;
+    color: #000;
     line-height: 1.4;
 }
 
