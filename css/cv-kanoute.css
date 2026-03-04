@@ -112,6 +112,9 @@
             text-align:center;
             padding:20px;
             }
+        
+
+
         button{
             padding:10px;
             margin:10px;
@@ -122,4 +125,11 @@
         button:hover{
             background-color: rgb(219, 162, 108);
             color: white;
+        }
+
+        @media print {
+
+            button{
+                display:none;
+            }
         }
