@@ -1,40 +1,255 @@
-@page{
-size: A4;
-margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --gris: #D9D9D9;
+  --noir: black;
+  --blanc: white;
 }
-.page-a4 {
-  width: 210mm;
-  height: 297mm;
-
-  padding: 20mm;
-
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: poppins, sans-serif;
+  background-color: #e6f0fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
 }
+
+/* CONTENEUR PRINCIPAL */
+.main-div{
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  background: var(--blanc);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.section-content{
+    display: flex;
+    position: relative;
+    flex: 1;
+}
+
+/* COLONNE GAUCHE */
+
+.section1{
+  background-color: var(--gris);
+  padding: 40px 30px;
+  color: var(--noir);
+  margin-top: -230px;
+  margin-left: 30px;
+  width: 40%;
+  border-radius:  200px 200px 0 0;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#photo{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--noir);
+}
+
+.section1 h2{
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  /* border-bottom: 2px solid var(--noir); */
+  padding-bottom: 5px;
+}
+
+.section1 p,
+.section1 li{
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section1 ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.section1 li{
+  margin-bottom: 6px;
+}
+
+/* COLONNE DROITE */
+
+.section2{
+  background-color: var(--blanc);
+  padding: 0;
+}
+
+/* HEADER (BANDE NOIRE) */
+
 header{
-    background-color: black;
-
-    p{
-        font-size: 62px;
-        color: white;
-        font-weight:lighter;
-
-    }
-    h1{
-        font-size: 64px;
-        color: white;
-        font-weight: bold; 
-    }
-    span{
-        font-size: 18px;
-        color: white;
-        font-weight: lighter;
-    }
+  background-color: var(--noir);
+  color: var(--blanc);
+  padding: 60px 40px;
+  text-align: end;
 }
 
+.nom-prenom p{
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.nom-prenom h1{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nom-prenom span{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* CONTENU DROITE */
+
+.section2 > div{
+  padding: 30px 40px;
+}
+
+.section2 h2{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  /* border-bottom: 2px solid #ddd; */
+  padding-bottom: 5px;
+}
+
+.section2 p,
+.section2 li{
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section2 ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.section2 li{
+  margin-bottom: 10px;
+}
+
+/* EXPERIENCE ALIGNEMENT */
+
+.experience li span:first-child{
+  font-weight: 600;
+}
+
+.experience li span:last-child{
+  float: right;
+  font-size: 13px;
+  color: gray;
+}
+
+/* REALISATIONS */
+
+.realisation li span{
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/*  LES ICONES */
+
+.fa-solid{
+  margin-right: 8px;
+}
+
+/* LES BOUTONS */
+
+.cv-telecharger{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+    margin-top: 0;
+}
+
+/* Bouton Télécharger */
+
+.btn-telecharger{
+    background-color: #3475EB;
+    color: white;
+}
+
+.btn-telecharger:hover{
+    background-color: var(--blanc);
+    transform: translateY(-2px);
+}
+
+/* Bouton Accueil */
+
+.btn-acceuil{
+    background-color: var(--blanc);
+    color: #3475EB;
+    border: 2px solid #3475EB;
+    margin: 20px;
+}
+
+.btn-acceuil:hover{
+    background-color: #3475EB;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* LES hr */
+/* .education hr{
+  width: 100px;
+  position: absolute;
+  margin:0 1000px 1000px 150px;
+}
+.competence hr{
+  width: 100px;
+  position: absolute;
+  margin:0 1000px 1000px 150px;
+}
+.langage hr{
+  width: 100px;
+  position: absolute;
+  margin:0 1000px 1000px 150px;
+  } */
+
+.section1 hr{
+  width: 100px;
+  position: absolute;
+  margin:-30px 1000px 1000px 150px;
+
+}
+.section2 hr{
+  width: 250px;
+  position: absolute;
+ margin-left: 320px;
+ margin-top: -30px;
+
+}

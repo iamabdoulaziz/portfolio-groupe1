@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Bakary Soukouna</title>
+    <link rel="stylesheet" href="css/CV_SOUKOUNA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <main class="cv-container" id="cv-content">
+        <aside class="sidebar">
+            <div class="photo-container">
+                <img src="images/Bakary.png" alt="Bakary Soukouna">
+            </div>
+
+            <section class="contact-section">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 223 79 20 28 63</li>
+                    <li><i class="fas fa-envelope"></i> bsoukouna792@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bamako, Mali</li>
+                </ul>
+            </section>
+
+            <section class="skills-section">
+                <h3>SKILL</h3>
+                <ul>
+                    <li>Package Office (Word, Excel, PowerPoint...)</li>
+                    <li>Google Docs, Sheets et Slides</li>
+                    <li>Les outils collaboratifs</li>
+                </ul>
+            </section>
+
+            <section class="languages-section">
+                <h3>LANGUAGES</h3>
+                <ul>
+                    <li>Anglais (courant)</li>
+                    <li>Français (courant)</li>
+                    <li>Bambara (courant)</li>
+                    <li>Soninké (maternelle)</li>
+                </ul>
+            </section>
+
+            <section class="interests-section">
+                <h3>CENTRES D'INTERET</h3>
+                <ul>
+                    <li>Lecture & Recherche</li>
+                    <li>Sport (Art martiaux)</li>
+                    <li>Voyage</li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="main-content">
+            <header class="header-top">
+                <h1>BAKARY SOUKOUNA</h1>
+                <h2>GESTIONNAIRE INFORMATIQUE</h2>
+            </header>
+
+            <div class="content-body">
+                <section class="timeline-item">
+                    <div class="icon-title">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>PROFILE</h3>
+                    </div>
+                    <div class="timeline-content">
+                        <p>Diplômé en Informatique de Gestion avec une expérience en assistance de direction, je combine expertise technique et engagement personnel. Je mets en avant rigueur et intégrité dans chaque projet.</p>
+                    </div>
+                </section>
+
+                <section class="timeline-item">
+                    <div class="icon-title">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>EXPERIENCE</h3>
+                    </div>
+                    
+                    <div class="experience-entry">
+                        <div class="entry-header">
+                            <span class="job-title">ASSISTANT DE LA DIRECTION</span>
+                            <span class="date">Janvier - Juin 2025</span>
+                        </div>
+                        <ul>
+                            <li>Collecte des informations ;</li>
+                            <li>Organisation des tâches de la direction ;</li>
+                            <li>Manipulation des données.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-entry">
+                        <div class="entry-header">
+                            <span class="job-title">STAGE TECHNIQUE</span>
+                            <span class="date">2024 - 2025</span>
+                        </div>
+                        <ul>
+                            <li>Saisir des données ;</li>
+                            <li>Duplication des copies ;</li>
+                            <li>Manipulation des données.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="timeline-item">
+                    <div class="icon-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>EDUCATION</h3>
+                    </div>
+
+                    <div class="experience-entry">
+                        <div class="entry-header">
+                            <span class="job-title">LICENCE PROFESSIONNELLE</span>
+                            <span class="date">2020 - 2024</span>
+                        </div>
+                        <p class="school-info">Institut Zayed des Sciences Economiques et Juridiques de Bamako (IZSEJB)<br>Colline de Badalabougou, Bamako, Mali</p>
+                    </div>
+
+                    <div class="experience-entry">
+                        <div class="entry-header">
+                            <span class="job-title">BACCALAUREAT MALIEN</span>
+                            <span class="date">2017 - 2020</span>
+                        </div>
+                        <p class="school-info">Lycée Privé Franco-arabe Daroul de Djicoroni-para (LPFDD)<br>Djicoroni, Bamako, Mali</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="no-print">
+        <button onclick="window.location.href='index.html'" class="btn-home">Retour à l'Accueil</button>
+        <button onclick="downloadPDF()" class="btn-download">Télécharger en PDF</button>
+    </footer>
+
+    <script>
+        function downloadPDF() {
+            const element = document.getElementById('cv-content');
+            const options = {
+                margin: 0,
+                filename: 'CV_Bakary_Soukouna.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(options).from(element).save();
+        }
+    </script>
+</body>
+</html>

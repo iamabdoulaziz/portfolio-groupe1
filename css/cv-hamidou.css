@@ -4,11 +4,77 @@ body{
     font-family: Arial, sans-serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.95);
+    padding: 12px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.b-back, .b-download {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: #fff;
+}
+
+.b-back {
+    background-color: #3d4f5d;
+    border-color: #3d4f5d;
+}
+
+.b-back:hover {
+    background-color: #2c3a45;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(61,79,93,0.2);
+}
+
+.b-download {
+    background-color: white;
+    color: #3d4f5d;
+    border-color: #3d4f5d;
+}
+
+.b-download:hover {
+    background-color: #3d4f5d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(61,79,93,0.2);
+}
+
+.b-back i, .b-download i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Cacher header et boutons lors de l'impression */
+@media print {
+    header { display: none; }
+    .actions { display: none; }
+}
+
 .page{
       width:210mm;
     height:297mm;
     margin:20px auto;
-    background:white;
+    background:rgb(255, 255, 255);
     box-shadow:0 0 20px rgba(0,0,0,0.2);
     /*overflow:hidden;*/
 }
@@ -63,7 +129,7 @@ body{
 }
 
 .header-box{
-    background:#efe5dc;
+    background:#F5F5DC;
     padding:20px;
     border-radius:12px;
     animation: fadeIn 1.2s ease;
@@ -107,7 +173,7 @@ body{
 
 .top-actions{
     text-align:left;
-    padding:12px 20px;
+    padding:15px 100px;
 }
 
 .top-actions button{

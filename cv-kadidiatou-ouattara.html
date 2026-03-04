@@ -11,15 +11,14 @@
 
 <body>
 
-    <!-- BOUTONS EN HAUT -->
     <header class="barre-boutons">
-        <a href="index.html" class="bouton bouton-accueil">
-            <i class="fa-solid fa-house"></i> Accueil
-        </a>
+       
+        <button class="bouton bouton-accueil" onclick="retourAccueil()">
+         <i class="fa-solid fa-house"></i> Accueil
+        </button>
 
-        <a href="cv-kadidiatou.pdf" download class="bouton bouton-telecharger" onclick="afficherMessage()">
-            <i class="fa-solid fa-download"></i> Télécharger CV
-        </a>
+       <a href="All CVs/CV - Kadidiatou OUATTARA.pdf" download class="bouton bouton-telecharger"> 
+        <i class="fa-solid fa-download"></i> Télécharger le CV </a>
     </header>
 
     <p id="message-telechargement"></p>
@@ -87,8 +86,9 @@
                     <h1>Kadidiatou OUATTARA</h1>
                     <h2>Développeur Web</h2>
                     <p>
-                        Diplômée en Génie Informatique, passionnée par le développement
-                        web et mobile. Dynamique et rigoureuse.
+                        Diplômée en Génie Informatique de l’Institut Supérieure d’Informatique et de Management (ISIM), 
+                        passionnée par le développement web et mobile. 
+                        Dynamique, rigoureuse et capable de travailler en équipe.
                     </p>
                 </div>
 
@@ -129,12 +129,24 @@
     </main>
 
     <script>
-        function afficherMessage() {
-            document.getElementById("message-telechargement").innerText =
-                "Le fichier est téléchargé avec succès ";
-        }
-    </script>
+function telechargerCV() {
 
+    let message = document.getElementById("message-telechargement");
+
+    message.innerText = "Le fichier a été téléchargé avec succès.";
+
+    setTimeout(function() {
+        message.innerText = "";
+    }, 4000);
+}
+ 
+</script>
+
+<script>
+function retourAccueil() {
+    window.location.href = "index.html";
+}
+</script>
 </body>
 
 </html>

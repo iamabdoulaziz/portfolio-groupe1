@@ -8,6 +8,8 @@ body {
   font-family: 'Arial', sans-serif;
   color: #333;
   line-height: 1.6;
+  overflow-x: auto;
+  min-width: 1200px;
 }
 
 header {
@@ -24,7 +26,8 @@ header {
   z-index: 1000;
 }
 
-.b-back, .b-download {
+.b-back,
+.b-download {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -80,18 +83,57 @@ header {
 /* Cache les boutons lors de l'impression */
 @media print {
   header {
-    display: none;
+    display: none !important;
   }
-  
+
   .container {
+    margin: 0;
     margin-top: 0;
+    box-shadow: none;
+    width: 100%;
+    min-width: auto;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: auto;
+  }
+
+  /* Évite les coupures de page */
+  .timeline-item,
+  .section {
+    page-break-inside: avoid;
+  }
+
+  /* Force les couleurs de fond pour l'impression */
+  .content-header,
+  .sidebar,
+  .icon {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .content {
+    page-break-inside: avoid;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: auto;
+  /* Permet le défilement horizontal */
+  min-width: 1200px;
+  /* Largeur minimale du body */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -100,6 +142,7 @@ header {
 
 .sidebar {
   width: 300px;
+  min-width: 300px;
   background-color: #e8e9eb;
   padding: 0;
   padding-top: 220px;
@@ -108,25 +151,26 @@ header {
   padding-bottom: 40px;
   flex-shrink: 0;
   position: relative;
+}
 
-  .photo {
-    position: absolute;
-    top: -10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    margin-bottom: 0;
+.photo {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  margin-bottom: 0;
 
-    img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 8px solid white;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 }
+
 
 .section {
   margin-bottom: 50px;
@@ -187,6 +231,11 @@ header {
   display: flex;
   flex: 1;
   background-color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .profile-section,
@@ -253,6 +302,10 @@ header {
   }
 }
 
+#dot-p {
+  top: 40px;
+}
+
 .item-header {
   display: flex;
   justify-content: space-between;
@@ -298,27 +351,6 @@ header {
   color: #555;
 }
 
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    /* Empile les sections verticalement */
-  }
-
-  .sidebar {
-    width: 100%;
-    /* Prend toute la largeur */
-  }
-
-  .header,
-  .profile-section,
-  .experience-section,
-  .education-section {
-    padding: 30px 20px;
-    /* Réduit le padding */
-  }
-}
-
 .cadre-vide {
   margin-bottom: 50px;
   background-color: #3d4f5d;
@@ -332,4 +364,10 @@ footer {
   font-size: 14px;
   margin-top: 100px;
   letter-spacing: 1px;
+}
+
+@media print {
+  footer {
+    display: none;
+  }
 }
