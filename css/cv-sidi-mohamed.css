@@ -1,266 +1,48 @@
-/* RESET & FONTS */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* RESET & LAYOUT */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Popins', sans-serif; background-color: #f4f4f4; display: flex; flex-direction: column; align-items: center; padding: 20px 0; }
+
+.cv-wrapper { width: 850px; display: flex; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; }
+
+/* SIDEBAR */
+.sidebar { width: 35%; background-color: #A2A2A2; color: #000000; padding: 30px 20px; border-radius: 100px 100px 0 0;z-index: 99;margin-left: 18px;}
+.photo-container { width: 190px; height: 190px; margin: 40px auto 20px; border-radius: 50%; overflow: hidden; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.photo-container img { width: 100%; height: 100%; object-fit: cover; }
+.sidebar-label { font-size: 14px; opacity: 0.8; margin-bottom: 10px; }
+.sidebar-title { font-size: 16px; padding-bottom: 5px; margin: 25px 0 15px; text-transform: uppercase; }
+.skill-list li, .simple-list li { font-size: 12px; margin-bottom: 8px; list-style: none; }
+
+/* MAIN CONTENT */
+.main-content { width: 65%; padding: 200px 40px 40px 40px; }
+.main-header { text-align: center; margin-bottom: 30px; background-color: #1C274C;position: absolute;width: 100%;left: 0%;top: 0;padding-left: 30vw;color: #fff;}
+.main-header h1 { font-size: 22px; letter-spacing: 1px; margin-bottom: 5px; }   
+.job-title { font-weight: bold; color: #ffffff; margin-top: 5px; }
+.header-divider { width: 80%; height: 6px; background: #fff; border: 2px solid #ccc; border-radius: 10px; margin: 15px auto; }
+.profil-box h3 { font-size: 14px; text-transform: uppercase; margin-bottom: 5px;color: #fff; }
+.profil-box p { font-size: 13px; line-height: 1.4; color: #ffffff;text-align: justify; }
+
+/* TIMELINE DESIGN (NOUVEAU) */
+.timeline-container {  padding-left: 30px; margin-top: 15px; top: 180px;}
+.timeline-line { position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: #454437; }
+.timeline-list { list-style: none;border-left: 1px solid black;padding-left: 24px; }
+.timeline-list li, .exp-item { position: relative; margin-bottom: 15px; font-size: 14px; }
+.dot { position: absolute; left: -31px; top: 4px; width: 12px; height: 12px; background: white; border: 2px solid #454437; border-radius: 50%; z-index: 2; }
+.dot1 { position: absolute; left: -31px; top: 30px; width: 12px; height: 12px; background: white; border: 2px solid #454437; border-radius: 50%; z-index: 2; }
+.dot2 { position: absolute; left: -31px; top: 51px; width: 12px; height: 12px; background: white; border: 2px solid #454437; border-radius: 50%; z-index: 2; }
+.dot3 { position: absolute; left: -31px; top: 69px;width :12px;height :12px;background:white;border :2px solid #454437;border-radius :50%;z-index :2;}
+.dot4 { position: absolute; left: -31px; top: 69px;width :12px;height :12px;background:white;border :2px solid #454437;border-radius :50%;z-index :2;}
+
+
+.section-main-title { font-size: 18px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+/* FOOTER */
+.cv-btn { width: 850px; display: flex; justify-content: center; gap: 20px; padding: 25px; }
+.btn { padding: 10px 20px; border-radius: 20px; border: none; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; text-decoration: none; transition: 0.3s; }
+.btn-download { background: #454437; color: white; }
+.btn-back { background: #ddd; color: #333; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+.content-list{
+    list-style-type: none;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.cv-wrapper {
-    width: 850px;
-    display: flex; /* Crée les deux colonnes */
-    background: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    min-height: 1100px;
-}
-
-/* SIDEBAR (GAUCHE) */
-.sidebar {
-    width: 38%;
-    background-color: #3D3D33; /* Marron foncé de votre photo */
-    color: #ffffff;
-    border-top-right-radius: 190px;
-    border-top-left-radius: 190px;
-    padding: 40px 20px;
-}
-
-.photo-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid white;
-}
-
-.photo-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.sidebar h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-weight: 300;
-}
-
-.contact-info p {
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-.section-group {
-    margin-top: 35px;
-}
-
-.sidebar-title {
-    font-size: 15px;
-    border-left: 3px solid white;
-    padding-left: 10px;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-
-.skill-list, .simple-list {
-    list-style: none;
-    font-size: 12px;
-}
-
-.skill-list li, .simple-list li {
-    margin-bottom: 8px;
-    line-height: 1.4;
-}
-
-.certif-text {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-/* CONTENU (DROITE) */
-.main-content {
-    width: 62%;
-    padding: 40px 30px;
-    color: #333;
-}
-
-.main-header h1 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
-.sub-header {
-    font-size: 12px;
-    color: #666;
-}
-
-.job-title {
-    font-size: 14px;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-.profil-box {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.profil-box h3 {
-    text-transform: uppercase;
-    font-size: 15px;
-    border-bottom: 1px solid #333;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.profil-box p {
-    font-size: 13px;
-    line-height: 1.5;
-    font-weight: 500;
-}
-
-.right-section {
-    margin-bottom: 30px;
-}
-
-.right-section h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-}
-
-.content-list {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.content-list li {
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.exp-block h3 {
-    font-size: 15px;
-    margin-bottom: 3px;
-}
-
-.date {
-    font-style: italic;
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 10px;
-
-}
-/* --- AJOUT POUR LE RESPONSIVE --- */
-
-@media (max-width: 850px) {
-    body {
-        padding: 0; /* On enlève les marges sur mobile */
-    }
-
-    .cv-wrapper {
-        width: 100%; /* Le CV prend toute la largeur */
-        flex-direction: column; /* La sidebar passe au-dessus du contenu */
-        box-shadow: none;
-    }
-
-    .sidebar {
-        width: 100%; /* La colonne marron prend toute la largeur */
-        border-radius: 0; /* On enlève les arrondis sur mobile pour plus de clarté */
-        padding: 30px 15px;
-        text-align: center; /* On centre le texte pour un look mobile plus moderne */
-    }
-
-    .sidebar-title {
-        border-left: none;
-        border-bottom: 2px solid white; /* Ligne en dessous plutôt qu'à gauche */
-        display: inline-block;
-        padding-left: 0;
-        padding-bottom: 5px;
-    }
-
-    .photo-container {
-        width: 120px; /* On réduit un peu la photo */
-        height: 120px;
-    }
-
-    .main-content {
-        width: 100%; /* Le contenu blanc prend toute la largeur */
-        padding: 30px 15px;
-    }
-
-    .main-header {
-        text-align: center; /* Centre le nom et le titre sur mobile */
-    }
-
-    .profil-box h3 {
-        display: block;
-        text-align: center;
-    }
-}
-/* On force le body à être une colonne pour empiler CV puis Footer */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
-    padding-top: 20px;
-    margin: 0;
-}
-
-.cv-wrapper {
-    width: 850px;
-    background: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    display: flex; /* Garde vos deux colonnes (sidebar et main) */
-}
-
-/* Style du footer extérieur */
-.cv-footer {
-    width: 100%;
-    max-width: 850px; /* Aligné sur la largeur du CV */
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 30px 0;
-    margin-top: 20px; /* Espace entre le CV et les boutons */
-}
-
-.btn {
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: none;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn-download {
-    background-color: #3D3D33;
-    color: white;
-}
-
-.btn-back {
-    background-color: #ffffff;
-    color: #3D3D33;
-    border: 2px solid #3D3D33;
-}
-
-/* TRÈS IMPORTANT : On cache le footer si on imprime ou si on génère le PDF */
-@media print {
-    .cv-footer {
-        display: none !important;
-    }
-}
+@media print { .cv-btn { display: none; } }
