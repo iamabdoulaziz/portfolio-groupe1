@@ -14,7 +14,7 @@
 }
 
 body{
-  background-color: #e6f0fa;
+  background-color: var(--blanc);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,8 @@ body{
 
 /* CONTENEUR PRINCIPAL */
 .main-div{
-
+  position: relative;
+  width: 100%;
   min-width: 794px;           /* largeur A4 */
   min-height: 1123px; 
   display: flex;
@@ -187,9 +188,9 @@ header{
 /* LES BOUTONS */
 
 .btn {
-  position: fixed;
+  position: relative;
   top: 0;
-  left: 0;
+  left: 30%;
   right: 0;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 15px 30px;
