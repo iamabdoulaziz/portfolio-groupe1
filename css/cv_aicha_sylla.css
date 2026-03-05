@@ -25,13 +25,14 @@ body{
 /* CONTENEUR PRINCIPAL */
 .main-div{
   width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
+   width: 794px;           /* largeur A4 */
+    min-height: 1123px; 
   display: flex;
   flex-direction: column;
   background: var(--blanc);
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
+
 .section-content{
     display: flex;
     position: relative;
@@ -62,20 +63,24 @@ body{
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--noir);
+  transition: transform 0.5s ease;
 }
-
+#photo:hover {
+  transform: scale(1.2); /* Zoom de 20% (120%) */
+}
 .section1 h2{
   margin: 20px 0 10px;
   font-size: 18px;
   font-weight: 600;
   /* border-bottom: 2px solid var(--noir); */
   padding-bottom: 5px;
+  
 }
 
-.section1 p,
-.section1 li{
+.section1 {
   font-size: 14px;
   line-height: 1.6;
+  transition: transform 0.5s ease;
 }
 
 .section1 ul{
@@ -85,6 +90,9 @@ body{
 
 .section1 li{
   margin-bottom: 6px;
+}
+.section1 span{
+  font-weight: bold;
 }
 
 /* COLONNE DROITE */
@@ -150,16 +158,18 @@ header{
 
 /* EXPERIENCE ALIGNEMENT */
 
-.experience li span:first-child{
-  font-weight: 600;
+.exp-para p{
+ margin-top: 25px;}
+.experience {
+  .actuellement{ margin-left: 250px; }
+  .bim-sa{margin-left: 350px; }
+  .doucsoft{margin-left: 200px; }
 }
-
-.experience li span:last-child{
-  float: right;
-  font-size: 13px;
-  color: gray;
+.experience {
+  .orange{font-weight: bold;}
+  .banque{font-weight: bold;}
+  .douc{font-weight: bold;}
 }
-
 /* REALISATIONS */
 
 .realisation li span{
@@ -175,70 +185,73 @@ header{
 
 /* LES BOUTONS */
 
-.cv-telecharger{
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-.btn{
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: 0.3s ease;
-    margin-top: 0;
+.b-back,
+.b-download {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
 }
 
-/* Bouton Télécharger */
-
-.btn-telecharger{
-    background-color: #3475EB;
-    color: white;
+.b-back {
+  background-color: #3d4f5d;
+  color: white;
+  border-color: #3d4f5d;
 }
 
-.btn-telecharger:hover{
-    background-color: var(--blanc);
-    transform: translateY(-2px);
+.b-back:hover {
+  background-color: #2c3a45;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(61, 79, 93, 0.3);
 }
 
-/* Bouton Accueil */
-
-.btn-acceuil{
-    background-color: var(--blanc);
-    color: #3475EB;
-    border: 2px solid #3475EB;
-    margin: 20px;
+.b-back:hover svg {
+  transform: scale(1.1);
 }
 
-.btn-acceuil:hover{
-    background-color: #3475EB;
-    color: white;
-    transform: translateY(-2px);
+.b-download {
+  background-color: white;
+  color: #3d4f5d;
+  border-color: #3d4f5d;
 }
 
-/* LES hr */
-/* .education hr{
-  width: 100px;
-  position: absolute;
-  margin:0 1000px 1000px 150px;
+.b-download:hover {
+  background-color: #3d4f5d;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(61, 79, 93, 0.3);
 }
-.competence hr{
-  width: 100px;
-  position: absolute;
-  margin:0 1000px 1000px 150px;
+
+.b-download:hover svg {
+  transform: translateY(2px);
 }
-.langage hr{
-  width: 100px;
-  position: absolute;
-  margin:0 1000px 1000px 150px;
-  } */
 
 .section1 hr{
   width: 100px;
@@ -252,4 +265,119 @@ header{
  margin-left: 320px;
  margin-top: -30px;
 
+}
+
+
+/*PARTIE RESPONSIVITE  */
+
+.nom-prenom p{
+  font-size: clamp(24px, 5vw, 50px);
+}
+
+.nom-prenom h1{
+  font-size: clamp(28px, 6vw, 50px);
+}
+
+.nom-prenom span{
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.section1 h2,
+.section2 h2{
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.section1 p,
+.section1 li,
+.section2 p,
+.section2 li{
+  font-size: clamp(13px, 1.8vw, 14px);
+}
+
+#photo{
+  width: clamp(150px, 30vw, 250px);
+  height: clamp(150px, 30vw, 250px);
+}
+
+.main-div{
+  width: 95%;
+  min-height: auto;
+}
+
+/* TABLETTE */
+
+@media screen and (max-width: 1024px){
+
+  .section-content{
+    flex-direction: column;
+  }
+
+  .section1{
+    width: 100%;
+    margin: 0;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .section2{
+    width: 100%;
+  }
+
+  header{
+    text-align: center;
+  }
+
+  .btn{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+/* MOBILE */
+
+
+@media screen and (max-width: 768px){
+
+  body{
+    padding: 20px 10px;
+  }
+
+  .main-div{
+    box-shadow: none;
+  }
+
+  .section1{
+    padding: 30px 20px;
+  }
+
+  .section2 > div{
+    padding: 20px;
+  }
+
+  header{
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .btn{
+    position: relative;
+    top: auto;
+  }
+
+  .b-back,
+  .b-download{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .experience .actuellement,
+  .experience .bim-sa,
+  .experience .doucsoft{
+    margin-left: 0;
+  }
+
+  .section1 hr,
+  .section2 hr{
+    display: none;
+  }
 }

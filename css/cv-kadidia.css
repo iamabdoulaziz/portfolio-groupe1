@@ -179,6 +179,7 @@ body {
 
 .bloc-formation p{
     margin-top: 25px;
+    color : #151313;
 }
 
 .ligne-formation {
@@ -187,18 +188,22 @@ body {
         margin-top: 25px;
 
 }
+.ligne-formation h4{
+    color: #151313;
+}
 
 .ligne-formation span {
-    color: #8B5E3C;
+    color: #DED0C2;
     font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
 
     .conteneur-cv {
-        flex-direction: column; 
+        flex-direction: column-reverse; 
         width: 100%;
         border-radius: 0;
+        
     }
 
     .colonne-gauche,
@@ -239,7 +244,7 @@ body {
 }
 @media print {
     .barre-boutons {
-        display: none;
+        display: none !important;
     }
 
     #message-telechargement {

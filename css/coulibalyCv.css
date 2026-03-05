@@ -177,12 +177,13 @@ body {
   margin-top: 0;
 
   .section-title {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #3d4f5d;
     padding-bottom: 8px;
+    flex: 1;
     margin-bottom: 15px;
   }
 }
@@ -282,8 +283,11 @@ body {
 .timeline {
   position: relative;
   margin-left: 20px;
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-top: 10px;
   border-left: 2px solid #d0d0d0;
+  margin-top: -20px;
+
 
   .timeline-item {
     position: relative;
@@ -291,7 +295,7 @@ body {
 
     .timeline-dot {
       position: absolute;
-      left: -37px;
+      left: -47px;
       top: 5px;
       width: 12px;
       height: 12px;
@@ -302,8 +306,13 @@ body {
   }
 }
 
+#timeline-p {
+  margin-left: -10px;
+}
+
 #dot-p {
   top: 40px;
+  left: -37px;
 }
 
 .item-header {
@@ -311,19 +320,30 @@ body {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 5px;
-
-  h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #2c3e50;
-  }
-
-  .date {
-    font-size: 13px;
-    color: #666;
-    white-space: nowrap;
-  }
+  gap: 20px;
 }
+
+.item-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.date {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.item-header .date {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 
 .position {
   font-size: 15px;
