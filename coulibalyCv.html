@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Bakary Coulibaly</title>
   <link rel="stylesheet" href="./css/coulibalyCv.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +18,7 @@
         <span>Accueil</span>
       </a>
 
-      <a href="#" class="b-download" onclick="downloadPDF(); return false;">
+      <a href="#" class="b-download" onclick="showPrintInstructions(); return false;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
@@ -238,55 +237,10 @@
   </footer>
 
   <script>
-    function downloadPDF() {
-      // Vérifie si html2pdf est chargé
-      if (typeof html2pdf === 'undefined') {
-        alert('Erreur : La bibliothèque html2pdf n\'est pas chargée. Vérifiez votre connexion internet.');
-        return;
-      }
+    function showPrintInstructions() {
 
-      // Cache les boutons
-      const header = document.querySelector('header');
-      const footer = document.querySelector('footer');
-      header.style.display = 'none';
-      if (footer) footer.style.display = 'none';
+      window.print();
 
-      // Options du PDF
-      const options = {
-        margin: 0,
-        filename: 'CV-Bakary-Coulibaly.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: {
-          scale: 2,
-          useCORS: true,
-          letterRendering: true
-        },
-        jsPDF: {
-          unit: 'mm',
-          format: 'a4',
-          orientation: 'portrait'
-        }
-      };
-
-      // Génère le PDF
-      const element = document.querySelector('.container');
-      
-      html2pdf()
-        .set(options)
-        .from(element)
-        .save()
-        .then(() => {
-          // Réaffiche les boutons
-          header.style.display = 'flex';
-          if (footer) footer.style.display = 'block';
-        })
-        .catch((error) => {
-          console.error('Erreur lors de la génération du PDF:', error);
-          alert('Erreur lors de la génération du PDF. Consultez la console (F12).');
-          // Réaffiche les boutons même en cas d'erreur
-          header.style.display = 'flex';
-          if (footer) footer.style.display = 'block';
-        });
     }
   </script>
 
