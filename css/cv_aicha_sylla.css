@@ -24,9 +24,9 @@ body{
 
 /* CONTENEUR PRINCIPAL */
 .main-div{
-  width: 100%;
-   width: 794px;           /* largeur A4 */
-    min-height: 1123px; 
+
+  min-width: 794px;           /* largeur A4 */
+  min-height: 1123px; 
   display: flex;
   flex-direction: column;
   background: var(--blanc);
@@ -48,6 +48,7 @@ body{
   margin-top: -230px;
   margin-left: 30px;
   width: 40%;
+  min-height: 1123px;
   border-radius:  200px 200px 0 0;
 }
 
