@@ -4,8 +4,8 @@
   --text-primary: #111827;
   --text-secondary: #6B7280;
   --accent: #4F46E5;
-  --accent-hover: #007BFF;
-  --border-light: #E5E7EB;;
+  --accent-hover: #4338CA;
+  --border-light: #E5E7EB;
 }
 
 html {
@@ -79,7 +79,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--accent-hover);
+  color: var(--accent);
 }
 
 .hero {
