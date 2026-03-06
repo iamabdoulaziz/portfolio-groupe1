@@ -99,6 +99,13 @@ footer{
     padding: 20px 0;
     margin-top: 20px;
 }
+
+/* hide footer during print / PDF generation */
+@media print {
+    footer {
+        display: none;
+    }
+}
 button{
     background-color: #3475EB;
     color: white;
