@@ -53,7 +53,7 @@
                         </ul>
                     </section>
 
-                    <section>
+                    <section >
                         <h3>CONTACTS</h3>
                         <p>tel: +22373538794</p>
                         <p>mail: ballasowpro@gmail.com</p>
@@ -74,10 +74,26 @@
             </section>
         </main>
          <footer>
-        <button onclick="alert('Le fichier est téléchargé avec succès' )">Télécharger CV </button>
+        <button onclick="downloadCV()">Télécharger CV </button>
         <a href="index.html"><button>Retour à l'accueil</button></a>
     </footer>
     </div>
+    <script>
+        
+        function downloadCV() {
+
+    const link = document.createElement("a");
+    link.href = "All CVs/Balla Sow.pdf"; 
+    link.download = "cv_balla_sow.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+   
+    
+}
+    </script>
    
 </body>
 </html>
