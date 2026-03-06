@@ -141,6 +141,7 @@ body {
 .main-content {
     width: 65%;
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
