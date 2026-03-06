@@ -69,6 +69,10 @@ h2 {
     display: inline-block;
     margin-bottom: 15px;
     margin-top: 0;
+}@media print {
+    footer {
+        display: none;
+    }
 }
 .achieve{
     display: flex;
@@ -101,11 +105,11 @@ footer{
 }
 
 /* hide footer during print / PDF generation */
-/* @media print {
+@media print {
     footer {
         display: none;
     }
-} */
+}
 button{
     background-color: #3475EB;
     color: white;
