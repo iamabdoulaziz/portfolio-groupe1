@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
         body {
-            margin: O;
-            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f2f2f2;
             animation: fadeIn 2s ease-in;
+            overflow-x:hidden;
         }
         @keyframes fadeIn {
             from {
@@ -13,38 +14,61 @@
                 opacity: 1;
             }
         }
+        header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.95);
+    padding: 12px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    z-index: 1000;
+}
         .container {
             display: flex;
             width: 230mm;
             min-height: 270mm;
-            /* max-width: 1100px; */
-            margin: 40px auto;
+            margin:  90px auto;
             background: white;
             border-radius: 15px;
             overflow: hidden;
         }
         .gauche {
-            background-color: rgb(240, 187, 138);
-            width: 40%;
+            background-color: #152437;
+            width: 35%;
             padding: 30px;
         }
         .gauche section {
-            padding-top: 235px;
+            padding-top: 215px;
         }
         .gauche i {
-            color: rgb(36, 22, 5);
+            color: white;
         }
         .gauche h3 {
             margin-top: 25px;
-            color: rgb(36, 22, 5);
+            color: white;
+            
+        }
+        
+        .gauche p {
+        color: white;
+        }
+       
+        .gauche ul {
+            padding-left: 18px;
+        }
+        .gauche ul li {
+            line-height: 1.8;
+            color: white;
         }
         
         
         .droite {
-            width: 60%;
+            width: 65%;
             padding: 40px;
-            background-color: beige;
-            /*animation: slideRight 2s ease;*/
+            background-color: white;
         }
         .droite section {
             padding-top: 20px;
@@ -52,84 +76,99 @@
         .trait {
             width: 300px;
             height: 4px;
-            background-color: rgb(56, 36, 10);
-            margin-top: 1px;
+            background-color: #152437;
         }
         .droite h3 {
-            color:rgb(56, 36, 10) ;
+            color: #152437;
         }
-        .droite  .trai {
+        .droite p {
+             line-height: 1.8;
+        }
+        .ptitrai {
             width: 70px;
             height: 4px;
-            background-color: rgb(56, 36, 10);
-            margin-top: 1px;
+            background-color: #152437;
         }
-        @keyframes slideRight {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        header {
+        .ligne{
             display: flex;
-            background-color: rgb(248, 227, 198);
-            padding-left: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            margin-left: -260px; 
-            margin-right: -50px; 
+            justify-content: space-between;
+            align-items: center;
+        }
         
+        .cvheader {
             
+            display: flex;
+            background-color: #DDDDDD;
+            border-radius: 15px 0 0 15px;
+            margin-left: -245px; 
+            margin-right: -45px; 
             }
-            header .photo {
-                padding-top: 20px;
-                margin-left: -95px;  
+
+            .cvheader {
+                .photo {
+                padding-top: 10px;
+                margin-left: -80px;  
             }
-            header .photo img {
+            .photo img {
             width: 150px;
             height: 150px;
-            align-items: left;
             border-radius: 50%;
             border: 6px solid white;
-            margin-right: 400px;
         }
-        header .intro {
-           
-            margin-left: -230px;
+         .intro {
+            
+            padding-left: 160px;
 
         }
-        
-
-        header  h1 {
-            transition: 2s;
-            animation: slideRight 7s ease;
-        }
-        
-        footer{
-            text-align:center;
-            padding:20px;
             }
         
 
-
+    
+       
         button{
             padding:10px;
             margin:10px;
             cursor:pointer;
             border-radius: 15px;
-            border-color:rgb(219, 162, 108) ;
+            border-color: #152437 ;
         }
         button:hover{
-            background-color: rgb(219, 162, 108);
+            background-color: #152437;
             color: white;
         }
+     
 
-        @media print {
-
-            button{
-                display:none;
+        @media screen and (max-width:1100px){
+            .container{
+                transform: scale(0.9);
             }
         }
+
+        @media screen and (max-width:900px){
+            .container{
+                transform: scale(0.75);
+            }
+        }
+
+        @media screen and (max-width:700px){
+            .container{
+                transform: scale(0.6);
+                
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        

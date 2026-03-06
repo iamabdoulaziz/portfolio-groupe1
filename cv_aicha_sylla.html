@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cv_aicha_sylla.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="js/cv_aicha_sylla.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.3/jspdf.umd.min.js"></script>
@@ -134,31 +135,5 @@
             </section>
         </div>
     </main>
-<script>
-function generatePDF() {
-
-    const element = document.querySelector(".main-div");
-
-    html2canvas(element, {
-        scale: 2   // qualité élevée
-    }).then(canvas => {
-
-        const imgData = canvas.toDataURL("image/png");
-
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF("p", "mm", "a4");
-
-        const pageWidth = 210;
-        const pageHeight = 297;
-
-        const imgWidth = pageWidth;
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-        doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-        doc.save("CV_Aichata_SYLLA.pdf");
-
-        alert(" Le fichier est téléchargé avec succès");
-    });
-}
-</script>
+    <script src="js/cv_aicha_sylla.js"></script>
 </body>

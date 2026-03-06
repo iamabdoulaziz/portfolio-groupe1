@@ -1,7 +1,7 @@
 body{
     margin:0;
     background:#ccc;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -64,19 +64,15 @@ header {
     font-size: 16px;
 }
 
-/* Cacher header et boutons lors de l'impression */
-@media print {
-    header { display: none; }
-    .actions { display: none; }
-}
+
 
 .page{
       width:210mm;
     height:297mm;
-    margin:20px auto;
+    margin:100px auto;
     background:rgb(255, 255, 255);
     box-shadow:0 0 20px rgba(0,0,0,0.2);
-    /*overflow:hidden;*/
+    
 }
 
 .cv-container{
@@ -86,36 +82,46 @@ header {
 
 .gauche{
     width:35%;
-    background:#d6c3b1;
+    background:#3475EB;
     padding:25px;
 }
 
 .photo-container{
     text-align:center;
-    margin-bottom:20px;
+    margin-top: 50px;
+    margin-bottom:70px;
 }
 
 .photo-container img{
-    width:150px;
-    height:150px;
+    width: 200px;
+    height:200px;
     border-radius:50%;
-    border:8px solid #c8b8a4;
     object-fit:cover;
     animation: zoomIn 1.2s ease;
+    
 }
 
 .section{
     margin-bottom:20px;
 }
 
+.droite .section {
+    padding-left: 30px;
+}
+.gauche .section{
+    margin: 16px;
+    line-height: 25px;
+}
 .gauche h3{
-    color:#5c4b3a;
+    color:#ffffff;
     font-size:20px;
     margin-bottom:8px;
 }
 
 .gauche p, .gauche li{
     font-size:15px;
+    color:#ffffff
+    
 }
 
 .gauche ul{
@@ -125,68 +131,57 @@ header {
 
 .droite{
     width:65%;
-    padding:30px;
+    padding:30px 0;
 }
 
 .header-box{
-    background:#F5F5DC;
-    padding:20px;
-    border-radius:12px;
-    animation: fadeIn 1.2s ease;
+    background:#152437;
+    padding: 20px 30px;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .header-box h1{
-    color:#b07f5a;
+    color:#ffffff;
     font-size:28px;
     margin:0;
 }
 
 .header-box h2{
-    color:#7a5a42;
+    color:#ffffff;
     margin:8px 0;
     font-size:20px;
 }
 
+.header-box p{
+    color:#ffffff;
+    margin:8px 0;
+    font-size:20px;
+}
+.header_line{
+    width:90px;
+    height:3px;
+    background:#fefeff;
+    margin:10px 0;
+}
 .line{
     width:100px;
     height:3px;
-    background:#b07f5a;
+    background:#152437;
     margin:10px 0;
 }
 
 .droite h3{
-    color:#b07f5a;
+    color:#152437;
     font-size:16px;
     margin-top:25px;
 }
 
 .job span{
     font-size:15px;
-    color:gray;
-}
-
-
-.actions{
-    text-align:center;
-    margin:20px;
-}
-
-.top-actions{
-    text-align:left;
-    padding:15px 100px;
-}
-
-.top-actions button{
-    margin:0;
-}
-
-button{
-    background:#b07f5a;
-    color:white;
-    padding:8px 18px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+    color:#808080;
 }
 
 
@@ -195,23 +190,3 @@ button{
     to{transform:scale(1);}
 }
 
-@keyframes fadeIn{
-    from{opacity:0; transform:translateY(20px);}
-    to{opacity:1; transform:translateY(0);}
-}
-
-
-@media print {
-    body{
-        background:white;
-    }
-
-    .page{
-        margin:0;
-        box-shadow:none;
-    }
-
-    .actions{
-        display:none;
-    }
-}

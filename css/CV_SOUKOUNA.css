@@ -92,7 +92,7 @@ body {
 /* Barre latérale gauche */
 .sidebar {
     width: 35%;
-    background-color: #d1d5db; /* Gris clair */
+    background-color: #3475EB; /* Blanc-Bleu */
     padding: 30px 20px;
 }
 
@@ -114,22 +114,18 @@ body {
 
 .sidebar h3 {
     font-size: 1rem;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #FFFFFF;
     margin-bottom: 15px;
     padding-bottom: 5px;
     margin-top: 30px;
 }
 
-.sidebar ul {
-    
-   
-}
 
 .sidebar ul li {
   
     font-size: 1,7rem;
     margin-bottom: 10px;
-    color: #333;
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     letter-spacing: 10%;
@@ -137,7 +133,7 @@ body {
 
 .sidebar ul li i {
     margin-right: 10px;
-    color: #1a2a3a;
+    color: #FFFFFF;
 }
 
 /* Contenu Principal Droite */
@@ -226,7 +222,7 @@ body {
     margin-left: 10px;
     font-size: 1rem;
     letter-spacing: 1px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1.6px solid #00000038;
     width: 100%;
 }
 
@@ -236,7 +232,7 @@ body {
     color: #000;
 }
 
-/* Experience Entries */
+/* Experience */
 .experience-entry {
     margin-bottom: 20px;
 }
@@ -248,7 +244,17 @@ body {
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
-
+.entry-header::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid #030303;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    margin-top: 8px;
+}
 .experience-entry ul {
     color: #000;
     margin-left: 20px;
