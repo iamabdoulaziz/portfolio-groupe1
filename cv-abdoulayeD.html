@@ -10,20 +10,29 @@
 </head>
 
 <body>
-    <button class="btn-retour">
-    <span class="icon">
-        <svg viewBox="0 0 24 24" fill="none">
-            <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <header>
+      <a href="./index.html" class="b-back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
         </svg>
-    </span>
-    Retour
-</button>
+        <span>Accueil</span>
+      </a>
+
+      <a href="#" class="b-download" onclick="onclick=downloadCV()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
+        </svg>
+        <span>Télécharger</span>
+      </a>
+    </header>
+    
     <div class="container">
         <aside class="sidebar">
             <div class="photo-identity">
                 <img src="images/AbdoulayeD.jpeg" alt="Photo_identity">
             </div>
-
+<div class="side-pro">
             <h3 class="section-titre">COORDONNÉES</h3>
             <div class="contact-item"><span class="icon"><i class="fa-solid fa-phone"></i></span>223 72 83 24 13</div>
             <div class="contact-item"><span class="icon"><i class="fa-solid fa-envelope"></i></span>abdoulaye24dembadiallo288@gmail.com</div>
@@ -59,19 +68,22 @@
                 <li>Apprentissage en ligne</li>
                 <li>Voyage</li>
             </ul>
+            </div>
         </aside>
         <main class="main">
+
             <div class="header-top">
                 <h1>DIALLO <span style="font-weight: 500;">Abdoulaye.D</span> </h1>
                 <div class="sous-titre">Développeur Web Junior & Designer</div>
+                <div class="section-ligne1"></div>
                 
           
-                <p style="margin-top: 12px;"> Développeur junior passionné par le web, j’utilise JavaScript
+                <p style="margin-top: -5px;"> Développeur junior passionné par le web, j’utilise JavaScript
                     (React, Node, Express) pour créer des applications web performantes, curieux et rigoureux, je
                     contribue à des projets innovants tout en développant mes compétences. </p>
             </div>
 
-
+        <div class="exp-pro">
             <div class="section-titre">EXPÉRIENCES PROFESSIONNELLES</div>
             <div class="section-ligne"></div>
 
@@ -115,7 +127,7 @@
                     </ul>
                 </div>
             </div>
-
+        </div>
             <div class="section-titre">FORMATIONS</div>
              <div class="section-ligne"></div>
           
@@ -146,25 +158,25 @@
     
 </div> -->
 
-<div class="actions">
+<!-- <div class="actions">
   <a href="All CVs/CV_Abdoulaye.D.pdf" download>
     <button>Télécharger CV</button>
   </a>
-</div>
+</div> -->
 
     <script>
         function downloadCV() {
 
     const link = document.createElement("a");
-   // link.href = "cv-hamidou.pdf"; 
-    link.download = "CV-Hamidou-Koita.pdf";
+    link.href = "All CVs/CV_MERN.pdf"; 
+    link.download = "Abdoulaye_Diallo_CV.pdf";
 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 
    
-    alert("Le fichier est téléchargé avec succès");
+    
 }
 const expItems = document.querySelectorAll('.experience-item');
 

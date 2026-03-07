@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <div class="container">
     <header>
       <a href="./index.html" class="b-back">
@@ -19,7 +18,7 @@
         <span>Accueil</span>
       </a>
 
-      <a href="#" class="b-download" onclick="alert('Le fichier est télécharger avec succès')">
+      <a href="#" class="b-download" onclick="showPrintInstructions(); return false;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
@@ -115,8 +114,8 @@
             <h2 class="title">PROFILE</h2>
           </div>
           <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
+            <div class="timeline-item" id="timeline-p">
+              <div class="timeline-dot" id="dot-p"></div>
               <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut
                 labore et dolore
@@ -147,7 +146,7 @@
               <div class="timeline-content">
                 <div class="item-header">
                   <h3>Borcelle Studio</h3>
-                  <span class="date">2020 - PRESENT</span>
+                  <span class="date">2024 - PRESENT</span>
                 </div>
                 <p class="position">Marketing Manager & Specialist</p>
                 <ul>
@@ -161,8 +160,8 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <div class="item-header">
-                  <h3>Borcelle Studio</h3>
-                  <span class="date">2020 - PRESENT</span>
+                  <h3>Fauget Studio</h3>
+                  <span class="date">2022 - 2024</span>
                 </div>
                 <p class="position">Marketing Manager & Specialist</p>
                 <ul>
@@ -176,8 +175,8 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <div class="item-header">
-                  <h3>Borcelle Studio</h3>
-                  <span class="date">2020 - PRESENT</span>
+                  <h3>Studio Shodwe</h3>
+                  <span class="date">2021 - 2022</span>
                 </div>
                 <p class="position">Marketing Manager & Specialist</p>
                 <ul>
@@ -208,7 +207,7 @@
               <div class="timeline-content">
                 <div class="item-header">
                   <h3>Master of Business Management</h3>
-                  <span class="date">2018 - 2023</span>
+                  <span class="date">2020 - 2022</span>
                 </div>
                 <p class="position">Marketing Manager & Specialist</p>
                 <p class="position">Marketing Manager & Specialist</p>
@@ -220,7 +219,7 @@
               <div class="timeline-content">
                 <div class="item-header">
                   <h3>Bachelor of Business Management</h3>
-                  <span class="date">2015 - 2018</span>
+                  <span class="date">2017 - 2020</span>
                 </div>
                 <p class="position">Marketing Manager & Specialist</p>
                 <p class="position">Marketing Manager & Specialist</p>
@@ -232,10 +231,19 @@
       </div>
     </main>
   </div>
-</body>
 
-<footer>
-  <p>TEAM SUPER-DEV — 2026</p>
-</footer>
+  <footer>
+    <p>TEAM SUPER-DEV — 2026</p>
+  </footer>
+
+  <script>
+    function showPrintInstructions() {
+
+      window.print();
+
+    }
+  </script>
+
+</body>
 
 </html>

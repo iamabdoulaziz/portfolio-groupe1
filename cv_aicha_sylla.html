@@ -1,114 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cv_aicha_sylla.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="js/cv_aicha_sylla.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.3/jspdf.umd.min.js"></script>
+        
     <title>CV de Aichata SYLLA</title>
 </head>
+
 <body>
-    <header>
-        <div class="arriere-plan-prenom">
+      <div class="btn">
+      <a href="./index.html" class="b-back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
+        <span>Accueil</span>
+      </a>
+
+      <a href="#" class="b-download" onclick="generatePDF()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
+        </svg>
+        <span>Télécharger</span>
+      </a>
+    </div>
+
+    <main class="main-div">
+        <header>
             <div class="nom-prenom">
                 <p>Aichata</p>
                 <h1>SYLLA</h1>
-                <span>Développeuse Full-Stack</span> 
+                <span>Développeuse Full-Stack</span>
             </div>
+        </header>
+        <div class="section-content">
+            <section class="section1">
+                <img src="images/AichaSylla.jpg" alt="image de profil" id="photo">
+                <div class="education">
+                    <h2>EDUCATION</h2><hr>
+                    <p><span>2022-2025 </span><br>
+                        Diplôme de Licence Professionnelle
+                        spécialité Analyste Programmeur à ECOSUP Alternance.
+                        Major de la promotion toutes filières confondues avec mention Très Bien.
+                    </p>
+                    <p><span>2018-2021</span><br>
+                         Baccalauréat Technique en Sciences
+                          et  Techniques de Gestion filière Comptabilité-Finances au
+                           Lycée Technique de Bamako.
+                    </p>
+                </div>
+                <div class="competence">
+                    <h2>COMPETENCES</h2><hr>
+                    <ul>
+                        <li>CodeIgniter, Laravel</li>
+                        <li>HTML, CSS, JavaScript, sql</li>
+                        <li>GitHub, Git</li>
+                        <li>Figma, Canva</li>
+                        <li>Photoshop, Premiere pro</li>
+                    </ul>
+                </div>
+                <div class="langage">
+                    <h2>LANGAGES</h2><hr>
+                    <ul>
+                        <li>Anglais(intermédiaire)</li>
+                        <li>Français(courant)</li>
+                        <li>Bambara(courant)</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>CONTACTS</h2>
+                    <hr>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i>90 05 95 66 / 63 12 53 77</li>
+                        <li><i class="fa-solid fa-envelope"></i><a
+                                href="aichatasylla44@gmail.com"></a>aichatasylla44@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i>Banconi Salembougou, <br>
+                            rue 28, porte 91, <br>
+                            Bamako, Mali
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="profil-info">
+                    <h2>PROFIL INFO</h2><hr>
+                    <p>
+                        Pour tous vos besoins de conception, développement d’applications
+                        en traduisant les besoins des utilisateurs en solutions techniques. 
+                    </p>
+                </div>
+
+                <div class="experience">
+                    <h2>EXPERIENCE PROFESSIONNELLE</h2><hr>
+                        <div class="exp-para">
+                            <p><span class="orange">Orange Digital Center</span><span class="actuellement">actuellement</span><br>
+                            Formation en dévoppement fullstack web et mobile pour 7 mois</p>
+                        
+                        
+                            <p><span class="banque">BIM-SA</span><span class="bim-sa">2025</span><br>
+                             Novembre 2025 : Stage de formation à la Banque  Internationale 
+                             pour le Mali (BIM-SA) pour une  période de 2 mois (03 nov. 31 déc.)
+                              au sein de la  Direction du Système d’Informations. Missions : Développement
+                            d’une application web de gestion  de formulaires</p>
+                        
+                            <p><span class="douc">Doucsoft Technologies SARL</span><span class="doucsoft">2024-2025</span><br>
+                            2024-2025 : Stage en développement web à  DOUCSOFT Technologies SARL. Formations : PHP,  JS et
+                             CodeIgniter4. Projet réalisé : Conception et  réalisation d’une application web de gestion du 
+                              processus de recrutement.
+                            </p>
+                        </div>
+                </div>
+
+                <div class="realisation">
+                    <h2>REALISATIONS</h2><hr>
+                    <ul>
+                        <li>
+                            <span>2025</span><br>
+                            Réalisation d’une application web de gestion de formulaires
+                        </li>
+                        <li>
+                            <span>2024-2025</span><br>
+                            Réalisation d’une application wed de gestion de processus de recrutement
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </header>
-
-    <main>
-        <div class="main-div">
-        <section class="section1">
-            <div class="profil-info">
-                <h2>PROFIL INFO</h2>
-                <p>
-                    Pour tous vos besions de conception, développement d’applications
-                     en traduisant les besoins des utilisateurs en solutions techniques. 
-                </p>
-            </div>
-            <div class="experience">
-                <h2>EXPERIENCE PROFESSIONNELLE</h2>
-                <ul>
-                    <li>
-                       <span>Orange Digital Center</span><span>actuellement</span><br>
-                        <p>Formation en dévoppement fullstack web et mobile pour 7 mois</p>
-                    </li>
-                    <li>
-                       <span>BIM-SA</span><span>2025</span><br>
-                        <p>Formation en dévoppement fullstack web et mobile pour 7 mois</p>
-                    </li>
-                    <li>
-                        <span>Doucsoft Technologies SARL</span><span>2024-2025</span><br>
-                        <p>
-                             Novembre 2025 : Stage de formation à la Banque 
-                              Internationale pour le Mali (BIM-SA) pour une  
-                              période de 2 mois (03 nov. 31 déc.) au sein de la 
-                               Direction du Système d’Informations. Missions : 
-                               Développement d’une application web de gestion  de formulaires
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="realisation">
-                <h2>REALISATIONS</h2>
-                <ul>
-                    <li>
-                        <span>2025</span>
-                        Réalisation d’une application web de gestion de formulaires
-                    </li>
-                    <li>
-                        <span>2024-2025</span>
-                        Réalisation d’une application wed de gestion de processus de recrutement 
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </section>
-             
-        <section class="section2">*
-            <img src="images/imageAichaSylla.jpg" alt="image de profil" id="photo">
-            <div class="">
-            <h2>EDUCATION</h2>
-            <p>2022-2025 <br>
-                Diplôme de Licence Professionnelle 
-                spécialité Analyste Programmeur à ECOSUP  Alternance. 
-                Major de la promotion toutes filières confondues avec mention Très Bien.
-            </p>
-            </div>
-            <div class="">
-                 <h2>COMPETENCES</h2>
-                <ul>
-                    <li>CodeIgniter, Laravel</li>
-                    <li>HTML, CSS, JavaScript, sql</li>
-                    <li>GitHub, Git</li>
-                    <li>Figma, Canva</li>
-                    <li>Photoshop, Premiere pro</li>
-                </ul>
-            </div>
-            <div class="">
-                 <h2>LANGAGES</h2>
-                <ul>
-                    <li>Anglais(intermédiaire)</li>
-                    <li>Français(courant)</li>
-                    <li>Bambara(courant)</li>
-                </ul>
-            </div>
-            <div class="">
-                 <h2>CONTACTS</h2>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>90 05 95 66 / 63 12 53 77</li>
-                    <li><i class="fa-solid fa-envelope"></i><a href="aichatasylla44@gmail.com"></a>aichatasylla44@gmail.com</li>
-                    <li><i class="fa-solid fa-location-dot"></i>Banconi Salembougou, <br>
-                        rue 28, porte 91, <br>
-                        Bamako, Mali
-                    </li>
-                </ul>
-            </div>
-        </section>
-            </div>
     </main>
-
+    <script src="js/cv_aicha_sylla.js"></script>
 </body>
-</html>
