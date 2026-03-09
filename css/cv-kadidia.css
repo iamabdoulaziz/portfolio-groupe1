@@ -6,7 +6,7 @@
 
 body {
     background: #E6EAF5;
-    font-family: Arial, sans-serif;
+ font-family:'Poppins', sans-serif;
     padding: 40px;
 }
 
@@ -58,9 +58,9 @@ body {
 }
 
 .colonne-gauche {
-    width: 35%; /*hauteur*/
+    width: 40%; /*hauteur*/
     background:#152437;
-    padding: 345px 30px 40px 30px;
+    padding: 390px 30px 40px 30px;
 }
 .colonne-gauche ul {
     padding-left: 18px; 
@@ -175,7 +175,7 @@ body {
 }
 .bloc-formation:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);/* Pour mettre de l'ombre*/
 } 
 
 .bloc-formation p{

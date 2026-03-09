@@ -1,7 +1,7 @@
 body{
     margin:0;
     background:#ccc;
-    font-family: sans-serif;
+    font-family: poppins;
 }
 
 header {
@@ -34,8 +34,8 @@ header {
 }
 
 .b-back {
-    background-color: #3d4f5d;
-    border-color: #3d4f5d;
+    background-color: #3475EB;
+    border-color: #3475EB;
 }
 
 .b-back:hover {
@@ -46,8 +46,8 @@ header {
 
 .b-download {
     background-color: white;
-    color: #3d4f5d;
-    border-color: #3d4f5d;
+    color: #3475EB;
+    border-color: #3475EB;
 }
 
 .b-download:hover {
@@ -90,14 +90,15 @@ header {
     text-align:center;
     margin-top: 50px;
     margin-bottom:70px;
+    position: relative;
+    z-index: 2;
 }
 
 .photo-container img{
-    width: 200px;
-    height:200px;
+    width:160px;
+    height:160px;
     border-radius:50%;
     object-fit:cover;
-    animation: zoomIn 1.2s ease;
     
 }
 
@@ -107,6 +108,7 @@ header {
 
 .droite .section {
     padding-left: 30px;
+    margin-right: 70px;
 }
 .gauche .section{
     margin: 16px;
@@ -136,36 +138,44 @@ header {
 
 .header-box{
     background:#152437;
-    padding: 20px 30px;
-    border-radius: 20px 0 0 20px;
+    padding:25px 40px 25px 120px;
+    border-radius:20px 0 0 20px;
+    margin-left:-150px;
+    color:white;
     position: relative;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    z-index: 1;
 }
 
 .header-box h1{
     color:#ffffff;
-    font-size:28px;
+    font-size:25px;
     margin:0;
+    margin-left: 60px;
 }
 
 .header-box h2{
     color:#ffffff;
     margin:8px 0;
-    font-size:20px;
+    font-size:18px;
+    margin-left: 60px;
 }
 
 .header-box p{
     color:#ffffff;
     margin:8px 0;
-    font-size:20px;
+    font-size:16px;
+    margin-left: 60px;
 }
 .header_line{
-    width:90px;
+    width:50px;
     height:3px;
     background:#fefeff;
     margin:10px 0;
+    margin-left: 60px;
 }
+  
 .line{
     width:100px;
     height:3px;
