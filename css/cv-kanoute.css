@@ -42,7 +42,7 @@
             padding: 30px;
         }
         .gauche section {
-            padding-top: 230px;
+            padding-top: 250px;
         }
         .gauche i {
             color: white;
@@ -50,6 +50,7 @@
         .gauche h3 {
             margin-top: 25px;
             color: white;
+            font-weight: 600;
             
         }
         
@@ -72,7 +73,7 @@
             background-color: white;
         }
         .droite section {
-            padding-top: 20px;
+            padding-top: 30px;
         }
         .trait {
             width: 300px;
@@ -97,7 +98,7 @@
         }
         
         .cvheader {
-            
+            position: relative;
             display: flex;
             background-color: #DDDDDD;
             border-radius: 15px 0 0 15px;
@@ -107,7 +108,7 @@
 
             .cvheader {
                 .photo {
-                padding-top: 20px;
+                padding-top: 25px;
                 margin-left: -80px;  
             }
             .photo img {
