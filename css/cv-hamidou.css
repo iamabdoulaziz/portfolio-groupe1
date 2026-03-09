@@ -34,8 +34,8 @@ header {
 }
 
 .b-back {
-    background-color: #3d4f5d;
-    border-color: #3d4f5d;
+    background-color: #3475EB;
+    border-color: #3475EB;
 }
 
 .b-back:hover {
@@ -46,8 +46,8 @@ header {
 
 .b-download {
     background-color: white;
-    color: #3d4f5d;
-    border-color: #3d4f5d;
+    color: #3475EB;
+    border-color: #3475EB;
 }
 
 .b-download:hover {

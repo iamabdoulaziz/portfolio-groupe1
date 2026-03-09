@@ -114,6 +114,7 @@ body {
 
 .sidebar h3 {
     font-size: 1rem;
+    color: #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
     margin-bottom: 15px;
     padding-bottom: 5px;
@@ -140,6 +141,7 @@ body {
 .main-content {
     width: 65%;
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 

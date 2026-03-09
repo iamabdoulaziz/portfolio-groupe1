@@ -18,7 +18,7 @@ h2{font-size: 20px; font-weight: bold; color: #fff; background-color: #3475EB;}
 }
 .sidebar{
     width: 35%;
-    background-color:  #3475EB;
+    background-color:  #152437;
     color: white;
     padding: 0px 20px;
     border-top-left-radius: 155px;
@@ -161,4 +161,68 @@ section {
 /* Optionnel : Délai pour la sidebar pour un effet décalé */
 .sidebar {
     animation: fadeIn 1s ease-out forwards;
+}
+/*my responsive*/
+/* Tablette */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        width: calc(100% - 40px); /* Prend toute la largeur */
+        margin: 0;
+        border-radius: 0; 
+        padding-top: 100px; 
+    }
+
+    .profile-img {
+        bottom: 0;
+        margin-bottom: -60px;
+    }
+
+    .profile-img img {
+        width: 150px;
+        height: 150px;
+        top: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .achieve {
+        flex-direction: column; 
+        gap: 0;
+    }
+
+    .a1, .a2 {
+        right: 0; 
+        margin-top: 20px;
+    }
+}
+
+/* Téléphone*/
+@media (max-width: 600px) {
+    .name h1 {
+        font-size: 2rem; 
+    }
+
+    section {
+        padding: 20px; /* Moins d'espace sur les côtés */
+    }
+
+    .sidebar-section h2, .main-content h2 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    /* Ajustement des boutons de navigation en haut */
+    body > a button {
+        width: 45%;
+        font-size: 14px;
+        margin-left: 5px;
+    }
 }

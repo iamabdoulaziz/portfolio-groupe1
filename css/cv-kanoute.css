@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap'); */
+
         body {
             margin: 0;
             padding: 0;
@@ -38,11 +38,11 @@
         }
         .gauche {
             background-color: #152437;
-            width: 35%;
+            width: 40%;
             padding: 30px;
         }
         .gauche section {
-            padding-top: 230px;
+            padding-top: 250px;
         }
         .gauche i {
             color: white;
@@ -50,6 +50,7 @@
         .gauche h3 {
             margin-top: 25px;
             color: white;
+            font-weight: 600;
             
         }
         
@@ -67,12 +68,12 @@
         
         
         .droite {
-            width: 65%;
+            width: 60%;
             padding: 40px;
             background-color: white;
         }
         .droite section {
-            padding-top: 20px;
+            padding-top: 35px;
         }
         .trait {
             width: 300px;
@@ -81,6 +82,8 @@
         }
         .droite h3 {
             color: #152437;
+            font-weight: 600;
+            font-size: 20px;
         }
         .droite p {
              line-height: 1.8;
@@ -107,7 +110,7 @@
 
             .cvheader {
                 .photo {
-                padding-top: 20px;
+                padding-top: 25px;
                 margin-left: -80px;  
             }
             .photo img {
@@ -127,11 +130,13 @@
     
        
         button{
+
             padding:10px;
             margin:10px;
             cursor:pointer;
             border-radius: 15px;
-            border-color: #152437 ;
+            border: 2px solid #152437 ;
+
         }
         button:hover{
             background-color: #152437;

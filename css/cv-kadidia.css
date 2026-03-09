@@ -6,7 +6,7 @@
 
 body {
     background: #E6EAF5;
- font-family:'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     padding: 40px;
 }
 
@@ -60,7 +60,7 @@ body {
 .colonne-gauche {
     width: 40%; /*hauteur*/
     background:#152437;
-    padding: 390px 30px 40px 30px;
+    padding: 393px 30px 40px 30px;
 }
 .colonne-gauche ul {
     padding-left: 18px; 
@@ -110,20 +110,20 @@ body {
 .photo-profil {
     position: absolute; 
     left: -90px;
-    top: 28px;
+    top: 35px;
     
 }
 
 .photo-profil img {
-    width: 190px; /*Largeur*/
-    height: 190px; /*Hauteur*/
+    width: 220px; /*Largeur*/
+    height: 220px; /*Hauteur*/
     border-radius: 50%;
     border: 6px solid white;
     object-fit: cover; /*L’image remplit tout l’espace du conteneur sans déformée l'image*/
     transition: 0.4s ease; /* temps de transition sur image*/
 }
 .photo-profil img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Permet de zoomer  l'image au survol*/
 }
 
 .texte-entete {
@@ -174,8 +174,8 @@ body {
      transition:  0.3s ease;
 }
 .bloc-formation:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);/* Pour mettre de l'ombre*/
+    transform: translateY(-5px);/* Animimation pour mettre en haut verticalement*/
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Pour mettre de l'ombre*/
 } 
 
 .bloc-formation p{
