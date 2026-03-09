@@ -13,7 +13,7 @@
 }
 
 body{
-  background-color: var(--blanc);
+  background-color:var(--blanc);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +101,7 @@ body{
   padding: 0;
 }
 
-/* HEADER (BANDE NOIRE) */
+/* HEADER (BANDE BLEU) */
 
 header{
   background-color: var(--noir);

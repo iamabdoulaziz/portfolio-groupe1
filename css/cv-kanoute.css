@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap'); */
         body {
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
+            font-family:'Poppins', sans-serif;
             animation: fadeIn 2s ease-in;
             overflow-x:hidden;
         }
@@ -41,7 +42,7 @@
             padding: 30px;
         }
         .gauche section {
-            padding-top: 215px;
+            padding-top: 250px;
         }
         .gauche i {
             color: white;
@@ -49,6 +50,7 @@
         .gauche h3 {
             margin-top: 25px;
             color: white;
+            font-weight: 600;
             
         }
         
@@ -71,7 +73,7 @@
             background-color: white;
         }
         .droite section {
-            padding-top: 20px;
+            padding-top: 30px;
         }
         .trait {
             width: 300px;
@@ -96,7 +98,7 @@
         }
         
         .cvheader {
-            
+            position: relative;
             display: flex;
             background-color: #DDDDDD;
             border-radius: 15px 0 0 15px;
@@ -106,7 +108,7 @@
 
             .cvheader {
                 .photo {
-                padding-top: 10px;
+                padding-top: 25px;
                 margin-left: -80px;  
             }
             .photo img {
