@@ -90,7 +90,7 @@ header {
 }
 
 .exp-pro{
-    padding-top: 200px;
+    padding-top: 232px;
 }
 .side-pro {
    padding-top: 210px;
@@ -99,20 +99,19 @@ header {
 
 .sidebar {
     background-color: #3475EB;
-    padding: 30px 25px;
+    padding: 60px 60px;
     color: #B79780;
 }
 
 .photo-identity {
-    left:100px;
+    left:60px;
     border: 2px solid #152437;
 
-    top: 30px;
+    top: 55px;
     position:absolute;
     z-index: 100;
-    margin-top: 30px;
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -125,7 +124,7 @@ header {
     object-fit: cover;
 }
 .section-titre {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: bold;
     margin: 25px 0 5px;  
     color: #000000;
@@ -197,11 +196,11 @@ color: #ffffffb5;
     right: 0;
     /* background-color: #a19b96; */
     background-color: #152437;
-    width: 600px;
-    height: 210px;
+    width: 630px;
+    height: 220px;
  
     margin-bottom: 30px;
-    padding-left: 190px;
+    padding-left: 224px;
     padding-bottom: 100px;
     /* background-color: #B28A6F; */
 }
@@ -232,7 +231,7 @@ color: #ffffffb5;
 }
 
 .exp-titre {
-    font-size: 1rem;
+    font-size: 16px;
     color: #000000;
     font-weight: bold;
     margin-bottom: 4px;
