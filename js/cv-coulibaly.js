@@ -1,7 +1,7 @@
 function downloadCv() {
   // Crée un lien temporaire
   const a = document.createElement('a');
-  a.href = './All CVs/cv-coulibaly.pdf';
+  a.href = './all-cvs/cv-coulibaly.pdf';
   a.download = 'CV-Bakary-Coulibaly.pdf';
   a.style.display = 'none';
   
