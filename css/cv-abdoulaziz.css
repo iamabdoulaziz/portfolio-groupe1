@@ -66,7 +66,6 @@ aside {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid black;
 }
 .profil-img {
     transition: transform 0.3s ease;
@@ -157,4 +156,70 @@ button {
 button:hover {
   background-color: #152437;
   color: white;
+}
+
+/* Corrections */
+.year {
+    margin-bottom: -8%;
+}
+.school {
+    margin-top: -9%;
+}
+
+.titre-hr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hr-minim {
+    width: 64px;
+    height: 0;
+    margin-top: 21%;
+}
+.competences h2{
+    width: 116px;
+    font-size: larger;
+    margin-top: 10%;
+}
+aside h2{
+    font-size: larger;
+    margin-top: 10%;
+}
+
+.hr-max {
+    width: 144px;
+    height: 0px;
+    margin-top: 9%;
+}
+
+.date {
+    padding-top: 2%;
+}
+
+.experience {
+    display: flex;
+    .line {
+        width: 0;
+        height: 498px;
+        background-color: black;
+        border: 1px solid black;
+        margin-top: 25%;
+
+    }
+    .exp-content {
+        padding-left: 8%;
+    }
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: -44px;
+    margin-top: 7%;
+    background-color: white;
+}
+.title {
+    margin-left: -48%;
 }

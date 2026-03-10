@@ -85,9 +85,14 @@
             font-weight: 600;
             font-size: 20px;
         }
-        .droite p {
-             line-height: 1.8;
+        .droite ul {
+            padding-left: 18px;
         }
+        .droite ul li {
+            line-height: 1.5;
+            
+        }
+       
         .ptitrai {
             width: 70px;
             height: 4px;

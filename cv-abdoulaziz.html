@@ -23,21 +23,25 @@
                 <div class="profil-img"><img src="images/My profile.png" alt="Abdoul Aziz's CV profil image"></div>
                 <section class="education">
                     <div>
-                        <h2> Education</h2>
-                        <hr class="hr-minim">
-                        <p>2026</p>
+                        <div class="titre-hr">
+                            <h2> Education</h2>
+                            <hr class="hr-minim">
+                        </div>
+                        <p class="year">2026</p>
                         <h3>Formation en Développement Web et Mobile (Full-Stack)</h3>
-                        <p>Orange Digital Kalanso</p>
+                        <p class="school">Orange Digital Kalanso</p>
                     </div>
                     <div>
-                        <p>2020 - 2023</p>
+                        <p class="year">2020 - 2023</p>
                         <h3>Licence en Développement et Génie Logiciel</h3>
-                        <p>IPSMART</p>
+                        <p class="school">IPSMART</p>
                     </div>
                 </section>
                 <section class="competences">
-                    <h2> COMPÉTENCES</h2>
-                    <hr class="hr-minim">
+                    <div class="titre-hr">
+                        <h2> COMPÉTENCES</h2>
+                        <hr class="hr-minim">
+                    </div>
                     <ul>
                         <li>Python, Django, SQL</li>
                         <li>HTML, CSS, JavaScript</li>
@@ -49,8 +53,10 @@
 
                 </section>
                 <section class="langages">
-                    <h2> LANGAGES</h2>
-                    <hr class="hr-minim">
+                    <div class="titre-hr">
+                        <h2> LANGAGES</h2>
+                        <hr class="hr-minim">
+                    </div>
                     <ul>
                         <li>Sonrhai, (Native)</li>
                         <li>Français (Courant)</li>
@@ -58,8 +64,10 @@
                     </ul>
                 </section>
                 <section class="contact">
-                    <h2> CONTACTS</h2>
-                    <hr class="hr-minim">
+                    <div class="titre-hr">
+                        <h2> CONTACTS</h2>
+                        <hr class="hr-minim">
+                    </div>
                     <p><i class="fa-solid fa-phone"></i><a href="tel:+22382496359">+223 82-49-63-59</a></p>
                     <p><i class="fa-solid fa-envelope"></i><a
                             href="mailto:abdoulazizc867@gmail.com">abdoulazizc867@gmail.com</a></p>
@@ -77,37 +85,51 @@
                 <p class="sub-title">Développeur Full-Stack Junior </p>
             </section>
             <section class="profile-info">
-                <h2> PROFILE INFO</h2>
-                <hr class="hr-max">
+                <div class="titre-hr">
+                    <h2> PROFIL INFO</h2>
+                    <hr class="hr-max">
+                </div>
                 <p>Hi! Je suis Abdoul Aziz, développeur Full-Stack Junior passionné
                     par la création d’applications web performantes et intuitives, avec une approche structurée et
                     orientée résolution de problèmes. Toujours en apprentissage, j’aime transformer des idées en
                     solutions concrètes à travers des projets pratiques et innovants.</p>
             </section>
             <section class="experience">
-                <h2> EXPERIENCES</h2>
-                <hr class="hr-max">
-                <div class="title-date">
-                    <h3 class="title">Pizza Mama</h3>
-                    <p class="date">2025 - 2026</p>
+                <div class="line"></div>
+                <div class="exp-flex">
+                    <div class="titre-hr">
+                        <h2> EXPÉRIENCES</h2>
+                        <hr class="hr-max">
+                    </div>
+                    <div class="exp-content">
+                        <div class="title-date">
+                            <div class="circle"></div>
+                            <h3 class="title">Pizza Mama</h3>
+                            <p class="date">2025 - 2026</p>
+                        </div>
+                        <p class="text">Site de gestion de menu pour une pizzeria avec gestion des prix, intégration du CSS et
+                            des templates Django.</p>
+                        <div class="title-date">
+                            <div class="circle"></div>
+                            <h3 class="title">EmailPlus</h3>
+                            <p class="date">2025 - 2026</p>
+                        </div>
+                        <p class="text">Système de gestion d’e-mails avec authentification et pièce jointe, envoi d’e-mails à
+                            partir d’un fichier CSV, gestion de compte utilisateur avec OTP sécurisé.</p>
+                        <div class="title-date">
+                            <div class="circle"></div>
+                            <h3 class="title">Portfolio</h3>
+                            <p class="date">2025 - 2026</p>
+                        </div>
+                        <p class="text">Conception et développement d’un site web personnel dynamique avec Python, Django, HTML
+                            et CSS, puis déploiement et hébergement du code sur GitHub.</p>
+                    </div>
                 </div>
-                <p class="text">Site de gestion de menu pour une pizzeria avec gestion des prix, intégration du CSS et
-                    des templates Django.</p>
-                <div class="title-date">
-                    <h3 class="title">EmailPlus</h3>
-                    <p class="date">2025 - 2026</p>
-                </div>
-                <p class="text">Système de gestion d’e-mails avec authentification et pièce jointe, envoi d’e-mails à
-                    partir d’un fichier CSV, gestion de compte utilisateur avec OTP sécurisé.</p>
-                <div class="title-date">
-                    <h3 class="title">Portfolio</h3>
-                    <p class="date">2025 - 2026</p>
-                </div>
-                <p class="text">Conception et développement d’un site web personnel dynamique avec Python, Django, HTML
-                    et CSS, puis déploiement et hébergement du code sur GitHub.</p>
             </section>
-            <h2> REALISATIONS</h2>
-            <hr class="hr-max">
+            <div class="titre-hr">
+                <h2> RÉALISATIONS</h2>
+                <hr class="hr-max">
+            </div>
             <section class="realisation">
 
                 <div class="real-left">
@@ -126,7 +148,7 @@
         </main>
     </div>
     <footer>
-        <a href="All CVs/Abdoul Aziz's CV.pdf" download><button class="download" onclick="alert('Le fichier à été télécharger avec succes !')"><i class="fa-solid fa-download"></i>Télécharger
+        <a href="All CVs/Abdoul Aziz's CV.pdf" download><button class="download"><i class="fa-solid fa-download"></i>Télécharger
                 mon CV</button></a>
     </footer>
 </body>

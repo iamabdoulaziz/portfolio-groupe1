@@ -109,14 +109,14 @@ body {
 
 .photo-profil {
     position: absolute; 
-    left: -90px;
+    left: -100px;
     top: 35px;
     
 }
 
 .photo-profil img {
-    width: 220px; /*Largeur*/
-    height: 220px; /*Hauteur*/
+    width: 230px; /*Largeur*/
+    height: 230px; /*Hauteur*/
     border-radius: 50%;
     border: 6px solid white;
     object-fit: cover; /*L’image remplit tout l’espace du conteneur sans déformée l'image*/
@@ -178,9 +178,10 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Pour mettre de l'ombre*/
 } 
 
-.bloc-formation p{
+.bloc-formation li{
     margin-top: 25px;
     color : #152437;
+    margin-left: 19px;
 }
 
 .ligne-formation {
@@ -195,7 +196,8 @@ body {
 
 .ligne-formation span {
     color: #152437;
-    font-weight: bold;
+    font-weight: regular;
+    opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
