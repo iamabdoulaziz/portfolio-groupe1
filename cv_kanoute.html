@@ -9,12 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+   
+
 </head>
 
 <body>
     <header>
    <a href="index.html"><button><i class="fa-solid fa-house"></i> Retour à l'accueil</button></a>
-    <a href="All CVs/CV-KANOUTE (1).pdf"  download > <button ><i class="fa-solid fa-download"></i> Télécharger CV </button></a>
+    <!-- <a href="all-cvs/CV-KANOUTE (1).pdf"  download > <button ><i class="fa-solid fa-download"></i> Télécharger CV </button></a> -->
+     <a href="all-cvs/CV-KANOUTE (1).pdf" download id="downloadCV">
+<button>
+<i class="fa-solid fa-download"></i> Télécharger CV
+</button>
+</a>
 </header>
     <main class="container">
         <section class="gauche">
@@ -84,16 +91,7 @@
             
         </section>
     </main>
-    
-
-
-<!-- 
-    <script>
-       function telechargerCV(){
-        alert("Le fichier est téléchargé avec succès");
-        window.print();
-        }
-     </script> -->
+     <script src="./js/cv-kanoute.js"></script>
 
 </body>
 </html> 

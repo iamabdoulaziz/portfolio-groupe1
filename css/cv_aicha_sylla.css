@@ -23,8 +23,8 @@ body{
 /* CONTENEUR PRINCIPAL */
 .main-div{
   position: relative;
-  min-width: 794px;           /* largeur A4 */
-  min-height: 1123px; 
+  max-width: 794px;           /* largeur A4 */
+  max-height: 1123px; 
   display: flex;
   flex-direction: column;
   background: var(--blanc);
@@ -43,10 +43,10 @@ body{
   background-color: var(--gris);
   padding: 40px 30px;
   color: var(--blanc);
-  margin-top: -230px;
+  margin-top: -255px;
   margin-left: 30px;
   width: 40%;
-  min-height: 1123px;
+  max-height: 999px;
   border-radius:  200px 200px 0 0;
 }
 
@@ -57,11 +57,10 @@ body{
 }
 
 #photo{
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--noir);
   transition: transform 0.5s ease;
 }
 #photo:hover {
@@ -77,13 +76,12 @@ body{
 }
 
 .section1 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
   transition: transform 0.5s ease;
 }
 
 .section1 ul{
-  list-style: none;
   padding-left: 0;
 }
 
@@ -91,14 +89,34 @@ body{
   margin-bottom: 6px;
 }
 .section1 span{
-  font-weight: bold;
+  font-weight: 300;
+}
+.education p{
+ font-weight: bold;
 }
 
+.section1 hr{
+  width: 80px;
+  position: absolute;
+  margin:-30px 1000px 1000px 150px;
+
+}
+.contact > ul >li{
+  list-style: none;
+}
 /* COLONNE DROITE */
 
 .section2{
   background-color: var(--blanc);
   padding: 0;
+  max-height: 800px;
+}
+.section2 hr{
+  width: 150px;
+  position: absolute;
+ margin-left: 240px;
+ margin-top: -30px;
+
 }
 
 /* HEADER (BANDE BLEU) */
@@ -131,7 +149,9 @@ header{
 .section2 > div{
   padding: 30px 40px;
 }
-
+.section2{
+  margin-bottom: 10px;
+}
 .section2 h2{
   font-size: 18px;
   font-weight: 600;
@@ -142,38 +162,80 @@ header{
 
 .section2 p,
 .section2 li{
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.6;
 }
 
 .section2 ul{
-  list-style: none;
-  padding-left: 0;
+display: flex;
+flex-direction: row;
+justify-content: left;
+
+
 }
 
 .section2 li{
-  margin-bottom: 10px;
+  padding: 10px;
 }
 
 /* EXPERIENCE ALIGNEMENT */
 
-.exp-para p{
- margin-top: 25px;}
 .experience {
-  .actuellement{ margin-left: 250px; }
-  .bim-sa{margin-left: 350px; }
-  .doucsoft{margin-left: 200px; }
+  .actuellement{ margin-left: 285px; }
+  .bim-sa{margin-left: 245px; }
+  .doucsoft{margin-left: 288px; }
 }
 .experience {
-  .orange{font-weight: bold;}
+  margin-bottom: 5px;
+  .orange{font-weight: bold;position: absolute; top: 0;}
   .banque{font-weight: bold;}
-  .douc{font-weight: bold;}
+  .douc{font-weight: bold;
+     position: absolute;
+     top: 0;
+  }
 }
+.exp-para{
+  border-left: 1px solid gray;
+  padding-left: 25px;
+}
+.div-exp{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  .point{
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    background-color: var(--blanc);
+
+  }
+  .div-exp1{
+    display: flex;
+    flex-direction: column;
+    .div-exp1-title{
+      display: flex;
+      flex-direction: row;
+     width: 100%;
+      
+    }
+  }
+  
+}
+.div-exp > p{
+   margin-bottom: 5px}
 /* REALISATIONS */
 
 .realisation li span{
   font-weight: 600;
   margin-right: 10px;
+}
+.realisation li{
+  margin-top: -15px;
 }
 
 /*  LES ICONES */
@@ -252,131 +314,5 @@ header{
   transform: translateY(2px);
 }
 
-.section1 hr{
-  width: 100px;
-  position: absolute;
-  margin:-30px 1000px 1000px 150px;
-
-}
-.section2 hr{
-  width: 250px;
-  position: absolute;
- margin-left: 320px;
- margin-top: -30px;
-
-}
 
 
-/*PARTIE RESPONSIVITE  */
-
-.nom-prenom p{
-  font-size: clamp(24px, 5vw, 50px);
-}
-
-.nom-prenom h1{
-  font-size: clamp(28px, 6vw, 50px);
-}
-
-.nom-prenom span{
-  font-size: clamp(14px, 2vw, 18px);
-}
-
-.section1 h2,
-.section2 h2{
-  font-size: clamp(16px, 2vw, 18px);
-}
-
-.section1 p,
-.section1 li,
-.section2 p,
-.section2 li{
-  font-size: clamp(13px, 1.8vw, 14px);
-}
-
-#photo{
-  width: clamp(150px, 30vw, 250px);
-  height: clamp(150px, 30vw, 250px);
-}
-
-.main-div{
-  width: 95%;
-  min-height: auto;
-}
-
-/* TABLETTE */
-
-@media screen and (max-width: 1024px){
-
-  .section-content{
-    flex-direction: column;
-  }
-
-  .section1{
-    width: 100%;
-    margin: 0;
-    border-radius: 50px 50px 0 0;
-  }
-
-  .section2{
-    width: 100%;
-  }
-
-  header{
-    text-align: center;
-  }
-
-  .btn{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-
-/* MOBILE */
-
-
-@media screen and (max-width: 768px){
-
-  body{
-    padding: 20px 10px;
-  }
-
-  .main-div{
-    box-shadow: none;
-  }
-
-  .section1{
-    padding: 30px 20px;
-  }
-
-  .section2 > div{
-    padding: 20px;
-  }
-
-  header{
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .btn{
-    position: relative;
-    top: auto;
-  }
-
-  .b-back,
-  .b-download{
-    width: 100%;
-    justify-content: center;
-  }
-
-  .experience .actuellement,
-  .experience .bim-sa,
-  .experience .doucsoft{
-    margin-left: 0;
-  }
-
-  .section1 hr,
-  .section2 hr{
-    display: none;
-  }
-}
