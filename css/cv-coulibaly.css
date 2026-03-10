@@ -170,16 +170,6 @@ header {
 
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  overflow-x: auto;
-  /* Permet le défilement horizontal */
-  min-width: 1200px;
-  /* Largeur minimale du body */
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -283,6 +273,29 @@ body {
   letter-spacing: 3px;
   font-weight: 300;
 }
+
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 40%;
+  background-color: #3475EB;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .content {
   display: flex;
