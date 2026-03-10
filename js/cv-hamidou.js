@@ -7,4 +7,5 @@ function downloadCV() {
     link.click();
    
     alert("Le fichier est téléchargé avec succès");
+    
 }

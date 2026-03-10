@@ -1,7 +1,9 @@
 body{
     margin:0;
     background:#ccc;
-    font-family: poppins;
+    font-family: arial, sans-serif;
+    letter-spacing: 0,5px;
+    line-height: 25PX;
 }
 
 header {
@@ -92,11 +94,18 @@ header {
     margin-bottom:70px;
     position: relative;
     z-index: 2;
+    border: 6px solid;
+    border-color: #ffffff;
+    border-radius: 50%;
+    width:190px;
+    height:190px;
+    margin-left: 55px;
 }
 
+
 .photo-container img{
-    width:160px;
-    height:160px;
+    width:190px;
+    height:190px;
     border-radius:50%;
     object-fit:cover;
     
@@ -200,3 +209,17 @@ header {
     to{transform:scale(1);}
 }
 
+/* ordinateurs */
+@media (min-width: 1440px) {
+    
+}
+
+/* tablete */
+@media (max-width: 1024px) {
+    
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    
+}
