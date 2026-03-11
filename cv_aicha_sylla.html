@@ -20,7 +20,7 @@
         <span>Accueil</span>
       </a>
 
-      <a href="#" class="b-download" >
+      <a href="all-cvs/cv-aichta-sylla.pdf" class="b-download" download class="bouton bouton-telecharger"  onclick="AfficherMessage()" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
@@ -28,7 +28,7 @@
         <span>Télécharger</span>
       </a>
     </div>
-
+    <div class="message-succes" id="message-telechargement"></div>
     <main class="main-div">
         <header>
             <div class="nom-prenom">
@@ -58,7 +58,7 @@
                 <div class="competence">
                     <h2>COMPETENCES</h2><hr>
                     <ul>
-                        <li>CodeIgniter, Laravel</li>
+                        <li>CodeIgniter, Laravel, Boostrap</li>
                         <li>HTML, CSS, JavaScript, sql</li>
                         <li>GitHub, Git</li>
                         <li>Figma, Canva</li>
@@ -104,25 +104,37 @@
                           <div class="div-exp">
                             <div class="point"></div>
                               <p><span class="orange">Orange Digital Center</span><span class="actuellement">actuellement</span><br>
-                            Formation en dévoppement fullstack web et mobile pour 7 mois</p>
-                          </div>
+                                Formation en dévoppement fullstack web et mobile pour 7 mois</p>
+                             </div>
                         
                             <div class="div-exp">
                                 <div class="point"></div>
                                 <p><span class="banque">BIM-SA</span><span class="bim-sa">2025</span><br>
-                             Novembre 2025 : Stage de formation à la Banque  Internationale 
-                             pour le Mali (BIM-SA) pour une  période de 2 mois (03 nov. 31 déc.)
-                              au sein de la  Direction du Système d’Informations. Missions : Développement
-                            d’une application web de gestion  de formulaires</p>
+                                    Stage de formation à la Banque  Internationale 
+                                    pour le Mali (BIM-SA) pour une  période de 2 mois (03 nov. 31 déc.)
+                                    au sein de la  Direction du Système d’Informations. Missions : Développement
+                                    d’une application web de gestion  de formulaires, assistance du personnel, 
+                                    participation et implication à l’exécution de tâches 
+                                    sous le contrôle d’un responsable. </p>
                             </div>
                         
                             <div class="div-exp">
                                 <div class="point"></div>
                                 <p><span class="douc">Doucsoft Technologies SARL</span><span class="doucsoft">2024-2025</span><br>
-                            2024-2025 : Stage en développement web à  DOUCSOFT Technologies SARL. Formations : PHP,  JS et
-                             CodeIgniter4. Projet réalisé : Conception et  réalisation d’une application web de gestion du 
-                              processus de recrutement.
-                            </p>
+                                    Stage en développement web à  DOUCSOFT Technologies SARL. Formations : PHP,  JS et
+                                    CodeIgniter4. Projet réalisé : Conception et  réalisation d’une application web de gestion du 
+                                    processus de recrutement.
+                                </p>
+                            </div>
+                            
+                            <div class="div-exp">
+                                <div class="point"></div>
+                                <p><span class="douc">BMK-RH consulting</span><span class="doucsoft">Mai-2024</span><br>
+                                    Formation sur l’employabilité 
+                                    (la méthodologie de l’entretien 
+                                    d’embauche, la posture professionnelle, les codes 
+                                    de conduite, la rédaction de cv).  
+                                 </p>
                             </div>
                         </div>
                 </div>
@@ -136,7 +148,7 @@
                         </li>
                         <li>
                             <span>2024-2025</span><br>
-                            Réalisation d’une application wed de gestion de processus de recrutement
+                            Réalisation d’une application wed de gestion du processus de recrutement
                         </li>
                     </ul>
                 </div>
