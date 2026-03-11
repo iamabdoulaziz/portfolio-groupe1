@@ -2,7 +2,7 @@
         function downloadCV() {
 
     const link = document.createElement("a");
-    link.href = "All CVs/CV_ABDOULAYE.pdf"; 
+    link.href = "all-cvs/CV_ABDOULAYE.pdf"; 
     link.download = "Abdoulaye_Diallo_CV.pdf";
     document.body.appendChild(link);
     link.click();
