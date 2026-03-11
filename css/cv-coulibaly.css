@@ -487,7 +487,7 @@ footer {
   }
 
   .photo {
-    top: 60px;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -504,6 +504,14 @@ footer {
     text-align: center;
   }
 
+  #dot-p {
+    top: 40%;
+    left: -27px;
+  }
+
+  .timeline-dot {
+    left: 400px;
+  }
   .name {
     font-size: 28px;
   }
