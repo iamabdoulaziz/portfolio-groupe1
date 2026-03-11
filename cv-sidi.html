@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>CV - Sidi Mohamed Berthe</title>
+
+<link rel="stylesheet" href="css/cv-sidi.css">
+
+<!-- Police Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<div class="cv-container">
+
+<!-- HEADER -->
+<div class="header">
+    <div class="header-content">
+        <h1>
+            <span class="firstname">Sidi Mohamed</span><br>
+            <span class="lastname">BERTHE</span>
+        </h1>
+        <p class="job">Data-scientist</p>
+    </div>
+</div>
+
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<div class="photo-container">
+<img src="images/SIDI_photo - Copie.jpg" alt="photo">
+</div>
+<div class="section">
+    <div class="tiret"><h3>ÉDUCATION</h3> <hr></div>
+
+
+
+<p><strong>Master 2 en Data Science en Cours</strong><br>
+UIEP-Mali (2026)</p>
+
+<p><strong>Licence en informatique de gestion</strong><br>
+UIG-MALI(2023)</p>
+
+<p><strong>Licence en Assurance Banque et Finance</strong><br>
+FSEG Mali(2022)</p>
+
+</div>
+
+
+<div class="section">
+    <div class="tiret"><h3>COMPÉTENCES</h3> <hr></div>
+
+
+<ul>
+<li>Langages : Python, SQL, R</li>
+<li>Base de données : PostgreSQL, MongoDB</li>
+<li>Big Data : Elasticsearch </li>
+<li>Cloud : AWS (EC2, S3, RDS...)</li>
+<li>Data Science & Machine Learning: Scikit-learn, TensorFlow, Pandas, NumPy </li>
+<li>Web & CMS : WordPress, Community Management</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+    <div class="tiret"><h3>LANGAGES</h3> <hr></div>
+
+<p>Anglais : Intermédiaire (B2)</p>
+<p>Français : Courant</p>
+
+</div>
+
+
+<div class="section">
+    <div class="tiret"><h3>CONTACT</h3> <hr></div>
+
+
+
+<p><i class="fa-solid fa-phone"></i> 73 71 50 31</p>
+<p><i class="fa-solid fa-envelope"></i> sidimohamed1294@gmail.com</p>
+<p><i class="fa-solid fa-location-dot"></i> Magnambougou, Bamako</p>
+
+</div>
+
+</div>
+
+
+
+<!-- CONTENU PRINCIPAL -->
+
+<div class="content">
+
+<section>
+<div class="tiret"><h3>INFORMATIONS SUR LE PROFIL</h3> <hr></div>
+
+
+<p>
+Jeune professionnel en Data Science (Master 2), avec une double formation en informatique de gestion et en assurance Banque & Finance. Passionné par l’analyse de données, l’IA et les solutions numériques innovantes.
+</p>
+
+</section>
+
+
+<section>
+
+
+<div class="tiret"><h3>EXPÉRIENCES</h3> <hr></div>
+
+<div class="experience">
+
+<div class="exp-header">
+<h4>Spidi Mali</h4>
+<span >2023 - 2024</span>
+</div>
+
+<p class="fleche">
+Gestion et Animation des réseaux sociaux<br>
+création de contenus visuels et rédactionnels<br>
+Analyse des performances<br>
+Stratégie et planification de communication digital
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="exp-header">
+<h4>UBA-MALI STAGE</h4>
+<span>11-2022</span>
+</div>
+
+<p class="fleche">
+Suivi et mise à jour des dossier client<br>
+Analyse des besoins bancaire
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="tiret"><h3>RÉALISATIONS</h3> <hr></div>
+
+<div class="realisation">
+
+<div>
+<strong>2021</strong>
+<p>Création d’un site web<br>E-commerce avec WordPress</p>
+</div>
+
+<div>
+<strong>2024</strong>
+<p>création d’une interface de recherche de document avec Elasticsearch</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+</div>
+<footer class="cv-footer">
+<div class="cv-actions">
+<a href="index.html" class="btn-back">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+</svg>
+<span>Retour</span>
+</a>
+<a href="#"class="b-download" onclick="downloadCV()">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+<path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/>
+</svg>
+<span>Télécharger</span>
+</a>
+</div>
+</footer>
+
+<script>
+        function downloadCV() {
+
+    const link = document.createElement("a");
+    link.href = "All CVs/CV_Sidi_Mohamed.pdf";
+    link.download = "Sidi_Mohamed_Berthe_CV.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // message après téléchargement
+    setTimeout(function(){
+    alert("✅ Votre CV a été téléchargé avec succès !");
+    },500);
+
+   
+    
+}
+</script>
+<script src="js/cv-sidi-animation.js"></script>
+
+</body>
+</html>
