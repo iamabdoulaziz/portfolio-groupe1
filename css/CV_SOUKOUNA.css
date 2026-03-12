@@ -344,24 +344,3 @@ font-size:16px;
 }
 
 }
-
-/* button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-} */
-
-/* .btn-home { background: #1a2332; color: white; }
-.btn-download { background: #27ae60; color: white; }
-
-button:hover { opacity: 0.8; } */
-
-/* Cacher les boutons lors de l'impression */
-/* @media print {
-    .no-print { display: none; }
-    body { padding: 0; background: white; }
-    .cv-container { box-shadow: none; }
-} */
