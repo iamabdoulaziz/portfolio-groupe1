@@ -219,11 +219,14 @@ body {
         padding: 10px 16px;  
         font-size: 12px;    
         margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 
     .bouton i {
         font-size: 14px;
+        
     }
 
 
@@ -272,13 +275,9 @@ body {
         font-size: 18px;   
     }
 
-     .formations h3::after {
-        width: 40px;      
-        height: 2px;
-    }
 
     .ligne-formation h4 {
-        font-size: 15px;   
+        font-size: 14px;   
     }
 
     .ligne-formation span {
@@ -286,11 +285,21 @@ body {
     }
 
     .bloc-formation li {
-        font-size: 14px;   
+        font-size: 12px;   
     }
     .bloc-formation {
      font-size: 11px;  
     }
+
+.colonne-gauche li {
+    font-size: 14px;  
+}
+.colonne-gauche h3 {
+    font-size: 14px;  
+}
+ .colonne-gauche p,.colonne-gauche li {
+    font-size: 14px;
+ }
 
 }
 @media print {
