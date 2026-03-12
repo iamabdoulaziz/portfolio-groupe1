@@ -6,6 +6,7 @@
             font-family:'Poppins', sans-serif;
             animation: fadeIn 2s ease-in;
             overflow-x:hidden;
+            justify-content: center;
         }
         @keyframes fadeIn {
             from {
@@ -35,6 +36,7 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
+            transform-origin: top center;
         }
         .gauche {
             background-color: #152437;
@@ -153,6 +155,7 @@
              .container{
     transform: scale(0.9);
     
+    
              }   
            
         }
@@ -161,12 +164,14 @@
              .container{
     transform: scale(0.75);
     
+    
              } 
         }
 
         @media  (max-width:600px){
             .container{
     transform: scale(0.6);
+    
    
 }
             
