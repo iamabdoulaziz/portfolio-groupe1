@@ -29,3 +29,8 @@ function notificationMessage(message) {
     setTimeout(() => notification.remove(), 300);
   }, 3000);
 }
+
+function test() {
+  console.log("Test");
+  return 0;
+}
