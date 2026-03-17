@@ -336,7 +336,6 @@ justify-content: left;
 }
 
 .message-succes::before{
-  content: "✅";
   font-weight: bold;
   margin-right: 5px;
 }
