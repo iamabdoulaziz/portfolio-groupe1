@@ -214,6 +214,21 @@ body {
         border-radius: 0;
         
     }
+    
+  .bouton {
+        padding: 10px 16px;  
+        font-size: 12px;    
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .bouton i {
+        font-size: 14px;
+        
+    }
+
 
     .colonne-gauche,
     .colonne-droite {
@@ -256,6 +271,36 @@ body {
         width: 100%;
     }
 
+     .formations h3 {
+        font-size: 18px;   
+    }
+
+
+    .ligne-formation h4 {
+        font-size: 14px;   
+    }
+
+    .ligne-formation span {
+        font-size: 14px;   
+    }
+
+    .bloc-formation li {
+        font-size: 12px;   
+    }
+    .bloc-formation {
+     font-size: 11px;  
+    }
+
+.colonne-gauche li {
+    font-size: 14px;  
+}
+.colonne-gauche h3 {
+    font-size: 14px;  
+}
+ .colonne-gauche p,.colonne-gauche li {
+    font-size: 14px;
+ }
+
 }
 @media print {
     .barre-boutons {
@@ -265,4 +310,6 @@ body {
     #message-telechargement {
         display: none;
     }
+
+    
 }

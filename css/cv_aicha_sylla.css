@@ -7,8 +7,9 @@
 }
 /* Reset */
 *{
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -18,6 +19,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x:hidden;
 }
 
 /* CONTENEUR PRINCIPAL */
@@ -44,7 +46,6 @@ body{
   margin-top: -255px;
   margin-left: 30px;
   width: 40%;
-  max-height: 999px;
   border-radius:  200px 200px 0 0;
 }
 
@@ -107,14 +108,12 @@ body{
 .section2{
   background-color: var(--blanc);
   padding: 0;
-  max-height: 800px;
 }
 .section2 hr{
   width: 150px;
   position: absolute;
  margin-left: 240px;
  margin-top: -20px;
-
 }
 
 /* HEADER (BANDE BLEU) */
@@ -178,9 +177,9 @@ justify-content: left;
 /* EXPERIENCE ALIGNEMENT */
 
 .experience {
-  .actuellement{ margin-left: 285px; }
-  .bim-sa{margin-left: 245px; }
-  .doucsoft{margin-left: 288px; }
+  .actuellement{ margin-left: 286px; }
+  .bim-sa{margin-left: 244px; }
+  .doucsoft{margin-left: 290px; }
 }
 .experience {
   margin-bottom: 5px;
@@ -206,7 +205,7 @@ justify-content: left;
     border: 1px solid gray;
     border-radius: 100%;
     position: absolute;
-    left: -32px;
+    left: -30px;
     top: 3px;
     background-color: var(--blanc);
 
@@ -247,8 +246,9 @@ justify-content: left;
 
 .btn {
   position: relative;
+  width: 100%;
   top: 0;
-  left: 30%;
+  left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 15px 30px;
@@ -340,136 +340,113 @@ justify-content: left;
   font-weight: bold;
   margin-right: 5px;
 }
+/* PARTIE RESPONSIVE  */
 
- /* MOBILE  */
+/* Téléphones */
+@media screen and (max-width: 600px){
 
-@media (max-width:768px){
+  .main-div{
+    margin: 0;
+    box-shadow: none;
+  }
 
-.main-div{
-  width:100%;
-  margin:10px;
+  header{
+    padding: 40px 20px;
+  }
+
+  .nom-prenom h1{
+    font-size: 28px;
+  }
+
+  .nom-prenom p{
+    font-size: 28px;
+  }
+
+  .nom-prenom span{
+    font-size: 14px;
+  }
+
+  .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #photo{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .section1{
+    padding: 20px;
+  }
+
+  .section2 > div{
+    padding: 20px;
+  }
+
+  .section2 h2{
+    font-size: 16px;
+  }
+
+  .section2 p,
+  .section2 li{
+    font-size: 11px;
+  }
+
+    .btn{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .b-back,
+  .b-download{
+    width: 100%;
+    justify-content: center;
+  }
+
 }
 
-.section-content{
-  flex-direction:column;
-}
+/* Tablettes */
+@media screen and (max-width: 900px){
 
-.section1{
-  width:100%;
-  margin:0;
-  padding:25px;
-  border-radius:40px 40px 0 0;
-}
+  .section-content{
+    flex-direction: column;
+  }
 
-.section2{
-  width:100%;
-}
+  .section1{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 30px 20px;
+  }
 
-#photo{
-  width:140px;
-  height:140px;
-}
+  .section2{
+    width: 100%;
+  }
 
-header{
-  text-align:center;
-  padding:30px 20px;
-}
+  header{
+    text-align: center;
+  }
 
-.nom-prenom p{
-  font-size:26px;
-}
+  .nom-prenom h1,
+  .nom-prenom p{
+    font-size: 35px;
+  }
 
-.nom-prenom h1{
-  font-size:30px;
-}
+  #photo{
+    width: 180px;
+    height: 180px;
+  }
 
-.nom-prenom span{
-  font-size:14px;
-}
-
-.section2 ul{
-  flex-direction:column;
-}
-
-.div-exp1-title{
-  flex-direction:column;
-}
-
-.btn{
-  position:static;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.section1 hr,
-.section2 hr{
-  position:static;
-  margin:10px 0;
-}
-
-}
-
-/*  TABLETTE  */
-
-@media (min-width:769px) and (max-width:1024px){
-
-.main-div{
-  width:95%;
-  margin:20px auto;
-}
-
-.section-content{
-  flex-direction:row;
-}
-
-.section1{
-  width:38%;
-  margin-top:-180px;
-  margin-left:20px;
-  padding:30px 20px;
-}
-
-#photo{
-  width:180px;
-  height:180px;
-}
-
-header{
-  padding:50px 30px;
-}
-
-.nom-prenom p{
-  font-size:36px;
-}
-
-.nom-prenom h1{
-  font-size:40px;
-}
-
-.nom-prenom span{
-  font-size:16px;
-}
-
-.section2 > div{
-  padding:25px 30px;
-}
-
-.section2 p,
-.section2 li{
-  font-size:13px;
-}
-
-.section2 ul{
-  flex-wrap:wrap;
-}
-
-.div-exp1-title{
-  flex-wrap:wrap;
-}
-
-.btn{
-  left:0;
-  justify-content:center;
-}
+  .section2 ul{
+    flex-direction: column;
+  }
 
 }

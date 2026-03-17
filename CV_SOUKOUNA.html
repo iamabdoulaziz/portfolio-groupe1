@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="css/CV_SOUKOUNA.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="js/cv_SOUKOUNA.js"></script>
+    <meta name="description" content="CV de Bakary Soukouna - Gestionnaire informatique">
 </head>
+
 <body>
     <div class="btn-principal">
     <a href="./index.html" class="b-back">
@@ -17,7 +20,7 @@
         <span>Accueil</span>
       </a>
 
-      <a href="#" class="b-download" onclick="onclick=downloadCV()">
+      <a href="#" class="b-download" onclick="downloadCV()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
@@ -38,7 +41,7 @@
                     <li><i class="fas fa-phone"></i> 223 79 20 28 63</li>
                     <li><i class="fas fa-envelope"></i> bsoukouna792@gmail.com</li>
                     <li><i class="fas fa-map-marker-alt"></i> Bamako, Mali</li>
-                    <li><i class="fa-brands fa-github"></i></i>SOUKOUNA98</li>
+                    <li><i class="fa-brands fa-github"></i> SOUKOUNA98</li>
                 </ul>
             </section>
 
@@ -144,23 +147,5 @@
             </div>
         </div>
     </main>
-    <footer class="no-print">
-        <button onclick="window.location.href='index.html'" class="btn-home">Retour à l'Accueil</button>
-        <button onclick="downloadPDF()" class="btn-download">Télécharger en PDF</button>
-    </footer>
-    <script>
-        function downloadPDF() {
-            const element = document.getElementById('cv-content');
-            const options = {
-                margin: 0,
-                filename: 'CV_Bakary_Soukouna.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-            html2pdf().set(options).from(element).save();
-        }
-    </script>
-
 </body>
 </html>

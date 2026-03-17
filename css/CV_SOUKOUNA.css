@@ -285,24 +285,62 @@ footer {
     display: flex;
     gap: 20px;
 }
+/* RESPONSIVE pour tablette */
+@media (max-width:768px){
 
-button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+.cv-container{
+flex-direction:column;
 }
 
-.btn-home { background: #1a2332; color: white; }
-.btn-download { background: #27ae60; color: white; }
+.left-column{
+width:100%;
+text-align:center;
+}
 
-button:hover { opacity: 0.8; }
+.right-column{
+width:100%;
+}
 
-/* Cacher les boutons lors de l'impression */
-@media print {
-    .no-print { display: none; }
-    body { padding: 0; background: white; }
-    .cv-container { box-shadow: none; }
+}
+/* Pour téléphone */
+@media (max-width:767px){
+
+h1{
+font-size:22px;
+}
+body{
+    width: 600;
+    height: 900;
+    margin: 0;
+    padding: 0;
+
+}
+h2{
+font-size:16px;
+}
+.btn-principal{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    margin: 0;   
+    padding-right: 0;
+    a{
+        text-align: center;
+    }
+}
+.sidebar{
+    width: 100%;
+    margin: 0;
+    padding: 40px 200px;
+    text-align: start;
+}
+.main-content{
+     width: 100%;
+    margin: 0;
+    padding: 40px 200px;
+    text-align: start;
+
+}
+
 }
