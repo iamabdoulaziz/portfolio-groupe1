@@ -261,6 +261,8 @@ section {
     .name h1 {
         font-size: 2rem;
     }
+    .myline, .tline, .decorline, .cercle1, .cercle2 {
+        display: none;
 
 }
 
@@ -290,3 +292,4 @@ footer{
 
     .myline, .tline, .decorline, .cercle1, .cercle2 {
         display: none;}}
+    }
