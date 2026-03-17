@@ -9,7 +9,7 @@ function downloadCv() {
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-  
+  //ajout
   // Affiche une notification
   setTimeout(() => {
     notificationMessage("CV téléchargé avec succès !");
@@ -28,4 +28,9 @@ function notificationMessage(message) {
     notification.classList.remove('show');
     setTimeout(() => notification.remove(), 300);
   }, 3000);
+}
+
+function test() {
+  console.log("Test");
+  return 0;
 }
